@@ -18,7 +18,7 @@ Functions are defifne with two fundamental conponents:
    The body includes the statements that will be carries out by the function.
   
 `@instructions`
-- Create a function called hello_world that prints the string "Hello World!".
+- Create a function named hello_world that prints the string "Hello World!".
 
 `@hint`
 Use the keyword def and follow by the name of the function and parentheses, (), to create a funtion. 
@@ -30,6 +30,9 @@ Then, include the statement that prints "Hello World!" in the body.
 # Write the code below
 def ________():
     print(______)
+    
+# Call the function
+hello_world()
 ```
 
 `@solution`
@@ -38,6 +41,9 @@ def ________():
 # Write the code below
 def hello_world():
     print("Hello World!")
+    
+# Call the function
+hello_world()
 ```
 
 `@sct`
@@ -57,40 +63,37 @@ lang: python
 xp: 100
 key: 8edbbb3a1d
 ```
-This basic exercise will teach you how to call a function. 
-Functions are defifne with two fundamental conponents:
-1. Header:
-   The header includes the keyword, def, the name of the function, and parameters the function requires.
-2. Body:
-   The body includes the statements that will be carries out by the function.
+After defining a function, it must be called to be use. 
+In the previous exercise, we create a function call "hello_world". In the last line of the code, we use the statement, hello_world(), to tell the program to look for the function called spam and execute it.
+Now, you will learn how to do it.
   
 `@instructions`
-- Create a function called hello_world that prints the string "Hello World!".
+- Create a function named Sum that prints the answer of 1+1.
+- Call the function
 
 `@hint`
-Use the keyword def and follow by the name of the function and parentheses, (), to create a funtion. 
-Then, include the statement that prints "Hello World!" in the body.
+To call the function, use the name of the function follow by a parentheses, (), just like the previous excercise where we use "hello_world()".
 
 `@sample_code`
 ```{python}
-# Create a new function using def()
-# Write the code below
+# Create a new function named "Sum"
 def ________():
+    # Print the Sum of 1+1
     print(______)
   
 # Call the function 
-hello_world()
+
 ```
 
 `@solution`
 ```{python}
-# Create a new function using def()
-# Write the code below
-def hello_world():
-    print("Hello World!")
-    
+# Create a new function named "Sum"
+def Sum():
+    # Print the sum of 1+1
+    print(1+1)
+  
 # Call the function 
-hello_world()
+Sum()
 ```
 
 `@sct`
