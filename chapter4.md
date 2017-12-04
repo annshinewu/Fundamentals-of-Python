@@ -18,23 +18,30 @@ Functions are defifne with two fundamental conponents:
    The body includes the statements that will be carries out by the function.
   
 `@instructions`
-- Create a function called helloworld that prints the string "Hello World!".
+- Create a function called hello_world that prints the string "Hello World!".
 
 `@hint`
-Use the keyword def and follow by the name of the function and parentheses, ( ), to create a funtion. 
+Use the keyword def and follow by the name of the function and parentheses, (), to create a funtion. 
 Then, include the statement that prints "Hello World!" in the body.
 
 `@sample_code`
 ```{python}
 # Create a new function using def()
 # Write the code below
+def ________():
+    print(______)
+    
+hello_world()
 ```
+
 `@solution`
 ```{python}
 # Create a new function using def()
 # Write the code below
-def helloworld():
+def hello_world():
     print("Hello World!")
+    
+hello_world()
 ```
 
 `@sct`
