@@ -26,12 +26,12 @@ Then, include the statement that prints "Hello World" in the body.
 `@pre_exercise_code`
 ```{python}
 # Create a new function using def()
-
+# Write the code below
 ```
 `@solution`
 ```{python}
 # Create a new function using def()
-
+# Write the code below
 def helloworld():
    print("Hellow World!")
 ```
