@@ -30,9 +30,9 @@ Then, include the statement that prints "Hello World!" in the body.
 # Write the code below
 def ________():
     print(______)
-   
+"""   
 # Call the function  
-hello_world()
+hello_world()"""
 ```
 
 `@solution`
@@ -42,8 +42,8 @@ hello_world()
 def hello_world():
     print("Hello World!")
     
-# Call the function 
-hello_world()
+"""# Call the function 
+hello_world()"""
 ```
 
 `@sct`
