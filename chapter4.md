@@ -16,9 +16,9 @@ Functions are defifne with two fundamental conponents:
    The header includes the keyword, def, the name of the function, and parameters the function requires.
 2. Body:
    The body includes the statements that will be carries out by the function.
-   
+  
 `@instructions`
-- Create a function called helloworld that prints the string "Hello World".
+- Create a function called helloworld that prints the string "Hello World!".
 
 `@hint`
 Use the keyword def and follow by the name of the function and parentheses, ( ), to create a funtion. 
