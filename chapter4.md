@@ -48,7 +48,8 @@ hello_world()
 
 `@sct`
 ```{python}
-test_function("hello_world()",
+test_error()
+test_object("hello_world()",
             undefined_msg = "You didn't declared the function hello_world() ",
             incorrect_msg = "Did you declare the function properly?")
 success_msg("Great work!")
