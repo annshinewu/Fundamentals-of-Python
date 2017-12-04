@@ -50,7 +50,6 @@ hello_world()
 
 `@sct`
 ```{python}
-test_error()
 success_msg("Great work!")
 ```
 ---
@@ -67,7 +66,7 @@ In the previous excercise, we created a function named `hello_world` and call th
 Using this statement, we tell the program to look for the function name `hello_world` and exexute it
   
 `@instructions`
-- Create a function named Sum that prints the answer of 1+1.
+- Create a function named `Sum` that prints the answer of `1+1`.
 - Call the function
 
 `@hint`
@@ -97,6 +96,5 @@ Sum()
 
 `@sct`
 ```{python}
-test_error()
 success_msg("Great work!")
 ```
