@@ -34,13 +34,13 @@ Then, include the statement that prints "Hello World!" in the body.
 # Create a new function using def()
 # Write the code below
 def helloworld():
-   print("Hellow World!")
+    print("Hellow World!")
 ```
 
 `@sct`
 ```{python}
 test_error()
-test_object("hellowworld()",
+test_object("helloworld()",
             undefined_msg = "Make sure to define the function!",
             incorrect_msg = "Have you correctly define the function?")
 test_function("print",
