@@ -24,6 +24,17 @@ Functions are defifne with two fundamental conponents:
 Use the keyword def and follow by the name of the function and parentheses, (), to create a funtion. 
 Then, include the statement that prints "Hello World!" in the body.
 
+`@pre_exercise_code`
+```{python}
+# Create a new function using def()
+# Write the code below
+def ________():
+    print(______)
+   
+# Call the function  
+hello_world()
+```
+
 `@sample_code`
 ```{python}
 # Create a new function using def()
