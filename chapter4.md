@@ -50,7 +50,6 @@ hello_world()
 
 `@sct`
 ```{python}
-#test_object("hello_world", undefined_msg = "Did you define `hello_world()`?")
 test_function_definition('hello_world', arg_defaults = False)
 test_output_contains("Hello World!", no_output_msg = "Did you print `Hello World!`",pattern = False)
 success_msg("Great work!")
@@ -100,7 +99,7 @@ Sum()
 `@sct`
 ```{python}
 test_function_definition('Sum', arg_defaults = False)
-test_function("Sum", not_called_msg = "Did you call Sum()? ")
+test_function("Sum", not_called_msg = "You didn't call the following function: Sum()")
 test_output_contains("2", no_output_msg = "Did you print the result of `1+1`?",pattern = False)
 success_msg("Great work!")
 ```
