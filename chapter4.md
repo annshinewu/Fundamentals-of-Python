@@ -96,5 +96,8 @@ Sum()
 
 `@sct`
 ```{python}
+test_object("Sum()",
+              undefined_msg = "Did you define Sum()?"
+              incorrect_msg = "Sum() seems to be defined incorrectly. ")
 success_msg("Great work!")
 ```
