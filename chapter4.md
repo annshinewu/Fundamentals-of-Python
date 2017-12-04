@@ -50,6 +50,7 @@ hello_world()
 
 `@sct`
 ```{python}
+test_object("hello_world", undefined_msg = "Did you define `hello_world()`?")
 success_msg("Great work!")
 ```
 ---
@@ -96,8 +97,7 @@ Sum()
 
 `@sct`
 ```{python}
-test_object("Sum()",
-              undefined_msg = "Did you define Sum()?"
-              incorrect_msg = "Sum() seems to be defined incorrectly. ")
+test_object("Sum", undefined_msg = "Did you define Sum()?")
+test_function("Sum", not_called_msg = "Did you call Sum()? ")
 success_msg("Great work!")
 ```
