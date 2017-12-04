@@ -30,7 +30,8 @@ Then, include the statement that prints "Hello World!" in the body.
 # Write the code below
 def ________():
     print(______)
-    
+   
+# Call the function  
 hello_world()
 ```
 
@@ -41,16 +42,28 @@ hello_world()
 def hello_world():
     print("Hello World!")
     
+# Call the function 
 hello_world()
 ```
 
 `@sct`
 ```{python}
-test_error()
-test_object("helloworld()",
-              undefined_msg = "Make sure to define the function!",
-              incorrect_msg = "Have you correctly define the function?")
-test_function("print",
-              incorrect_msg = "Have you correctly use the print()?")
-success_msg("Great work! You have sucessfully create a function.")
+# SCT written with pythonwhat: https://github.com/datacamp/pythonwhat/wiki
+
+test_function("numpy.unique",
+              not_called_msg = "Don't remove the call of `np.unique` to define `ints`.",
+              incorrect_msg = "Don't change the call of `np.unique` to define `ints`.")
+
+test_object("ints",
+            undefined_msg = "Don't remove the definition of the predefined `ints` object.",
+            incorrect_msg = "Don't change the definition of the predefined `ints` object.")
+
+test_import("matplotlib.pyplot", same_as = True)
+
+test_function("matplotlib.pyplot.scatter",
+              incorrect_msg = "You didn't use `plt.scatter()` correctly, have another look at the instructions.")
+
+test_function("matplotlib.pyplot.show")
+
+success_msg("Great work!")
 ```
