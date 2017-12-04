@@ -1,13 +1,12 @@
 ---
 title       : Introduction to Functions
 description : This chapter will teach the basics about functions, suchs as defining and calling functions
-attachments :
 ---
 ## Defining Functions
 
 ```yaml
 type: NormalExercise
-lang: r
+lang: python
 xp: 100
 ```
 This basic exercise will challenge you to create a function in python. 
@@ -40,8 +39,10 @@ def helloworld():
 `@sct`
 ```{python}
 test_error()
-test_function("def hellowworld()",
+test_object("hellowworld()",
             undefined_msg = "Make sure to define the function!",
             incorrect_msg = "Have you correctly define the function?")
+test_function("print",
+               incorrect_msg = "Have you correctly use the "print()"?)
 success_msg("Great work! You have sucessfully create a function.")
 ```
