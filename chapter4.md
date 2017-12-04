@@ -48,10 +48,5 @@ hello_world()
 
 `@sct`
 ```{python}
-
-test_function("numpy.unique",
-              not_called_msg = "Don't remove the call of `np.unique` to define `ints`.",
-              incorrect_msg = "Don't change the call of `np.unique` to define `ints`.")
-
 success_msg("Great work!")
 ```
