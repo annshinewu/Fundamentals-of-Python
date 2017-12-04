@@ -19,12 +19,12 @@ Functions are defifne with two fundamental elements:
    The body includes the statements that will be carries out by the function when executed.
   
 `@instructions`
-- Create a function named hello_world
-- Inside the body, use print() to display the string "Hello World!".
+- Create a function named `hello_world`
+- Inside the body, use `print()` to display the string `"Hello World!"`.
 
 `@hint`
-- Use the keyword def and follow by the name of the function and parentheses, (), to create a funtion. 
-- Include the statement print(), with "Hello World!" inside the parentheses, in the body.
+- Use the keyword, `def`, and follow by the name of the function and parentheses, (), to create a funtion. 
+- Include the statement `print()`, with `"Hello World!"` inside the parentheses, in the body.
 
 `@sample_code`
 ```{python}
@@ -51,9 +51,6 @@ hello_world()
 `@sct`
 ```{python}
 test_error()
-test_object("hello_world()",
-            undefined_msg = "You didn't declared the function hello_world() ",
-            incorrect_msg = "Did you declare the function properly?")
 success_msg("Great work!")
 ```
 ---
@@ -66,16 +63,15 @@ xp: 100
 key: c61d77322e
 ```
 After defining a function, it must be called to be implemented. 
-In the previous excercise, we created a function named "hello_world" and call the function in the last statement, hello_world() of the code. 
-Using this statement, we tell the program to look for the function name hello_world and exexute it
-Now, you will learn how to do it.
+In the previous excercise, we created a function named `hello_world` and call the function in the last statement,`hello_world()`. 
+Using this statement, we tell the program to look for the function name `hello_world` and exexute it
   
 `@instructions`
 - Create a function named Sum that prints the answer of 1+1.
 - Call the function
 
 `@hint`
-To call the function, use the name of the function follow by a parentheses, (), just like the previous excercise where we use "hello_world()".
+To call the function, use the name of the function follow by a parentheses, (), just like the previous excercise where we use `hello_world()`.
 
 `@sample_code`
 ```{python}
@@ -102,8 +98,5 @@ Sum()
 `@sct`
 ```{python}
 test_error()
-test_object("hello_world()",
-            undefined_msg = "You didn't declared the function hello_world() ",
-            incorrect_msg = "Did you declare the function properly?")
 success_msg("Great work!")
 ```
