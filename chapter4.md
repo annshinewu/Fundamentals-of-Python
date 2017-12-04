@@ -49,8 +49,9 @@ hello_world()
 `@sct`
 ```{python}
 test_error()
-test_object("hello_world()",
+"""test_object("hello_world()",
             undefined_msg = "You didn't declared the function hello_world() ",
-            incorrect_msg = "Did you declare the function properly?")
+            incorrect_msg = "Did you declare the function properly?")"""
+Ex().test_output_contains("Hello World!", no_output_msg = "Did you print 'Hello World!'?")
 success_msg("Great work!")
 ```
