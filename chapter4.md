@@ -1,6 +1,6 @@
 ---
-title       : Introduction to Functions
-description : This chapter will teach the basics about functions, suchs as defining and calling functions
+title : Introduction to Functions
+description : This chapter will teach the basics about functions, such as defining and calling functions
 ---
 ## Defining Functions
 
@@ -48,7 +48,6 @@ hello_world()
 
 `@sct`
 ```{python}
-# SCT written with pythonwhat: https://github.com/datacamp/pythonwhat/wiki
 
 test_function("numpy.unique",
               not_called_msg = "Don't remove the call of `np.unique` to define `ints`.",
