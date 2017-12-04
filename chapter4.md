@@ -8,6 +8,7 @@ description : This chapter will teach the basics about functions, suchs as defin
 type: NormalExercise
 lang: python
 xp: 100
+key: 8edbbb3a1d
 ```
 This basic exercise will challenge you to create a function in python. 
 Functions are defifne with two fundamental conponents:
@@ -20,7 +21,7 @@ Functions are defifne with two fundamental conponents:
 - Create a function called helloworld that prints the string "Hello World".
 
 `@hint`
-Use the keyword def and follow by the name of the function and parentheses, (), to create a funtion. 
+Use the keyword def and follow by the name of the function and parentheses, ( ), to create a funtion. 
 Then, include the statement that prints "Hello World!" in the body.
 
 `@sample_code`
