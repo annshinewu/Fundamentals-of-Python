@@ -157,3 +157,61 @@ test_function_definition("Subtract", arg_names = True, arg_defaults = False)
 test_function("Subtract", not_called_msg = "You didn't call the following function: ()")
 success_msg("Great work!")
 ```
+
+---
+## Return
+
+```yaml
+type: NormalExercise
+lang: python
+xp: 100
+```
+In the body of the functions we defined in the prvious exercises, we use print to output the desired outcome. However, we can also use `return ` to escpae the function and send back a desired value. For example:
+
+`def Subtract(a, b):
+   return(a-b) #We send the result of a-b back to the calling environment`
+  
+difference = Subtract(10,5) #We store the difference between 10 and 5 into the variable named difference`
+  
+A function can require as many parameters as you like, but when you call the function, you should pass in the matching number of arguments.
+
+`@instructions`
+- Look at the function in the editor, Subtract. It should take in two arguments and subtract the two numbers. 
+- Create a function named `Subtract` (this part is done for you).
+- Fill in the paremeter so it perferm the function desired.
+- Call the function with appropriate arguments that will output `5`
+
+`@hint`
+- To pass in arguments, you have to specify the paremeters in the parentheses, (). For example: def Multiply(a,b)
+- To call the function, use the name of the function follow by a parentheses, ().
+- To pass the arguments, type the number you want in the parentheses, (). Remind to seperate different arguments by comma.
+
+`@sample_code`
+```{python}
+# Create a new function named "Subtract"
+def Subtract(___,___):
+    # Print the result of a-b
+    print(a-b)
+  
+# Call the function 
+
+```
+
+`@solution`
+```{python}
+# Create a new function named "Subtract"
+def Subtract(a, b):
+    # Print the result of a-b
+    print(a-b)
+  
+# Call the function 
+Subtract(10,5)
+```
+
+`@sct`
+```{python}
+test_output_contains("5", no_output_msg = "The output is inccorect. Make sure the difference between two arguments is `5`?",pattern = False)
+test_function_definition("Subtract", arg_names = True, arg_defaults = False)
+test_function("Subtract", not_called_msg = "You didn't call the following function: ()")
+success_msg("Great work!")
+```
