@@ -111,6 +111,7 @@ success_msg("Great work!")
 type: NormalExercise
 lang: python
 xp: 100
+key: 8a9e65ebb1
 ```
 In the previous excercises, we work on defeining and calling functions. Now, we are going to learn how to pass variables or values into a function. Looking at the following code: `def Sum(a, b)`. a and b is the parameter of the function, `Sum()`. A `parameter` acts as a variable name for a passed in `argument`. For example, we called the function with the following statement, `Sum(10,26)`. The argument passed in is 10 and 26. When the function was called, a holds the value 10 ,and b hols the value 26.
   
@@ -151,7 +152,7 @@ Subtract(10,5)
 
 `@sct`
 ```{python}
-test_function_definition('Sum', arg_names = True, arg_defaults = False)
+test_function_definition("Subtract", arg_names = True, arg_defaults = False)
 test_function("Subtract", not_called_msg = "You didn't call the following function: ()")
 test_output_contains("5", no_output_msg = "Make sure the difference between two arguments is `5`?",pattern = False)
 success_msg("Great work!")
