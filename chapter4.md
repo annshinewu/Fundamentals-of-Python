@@ -118,7 +118,7 @@ In the previous exercises, we work on defeining and calling functions. Now, we a
 A function can require as many parameters as you like, but when you call the function, you should pass in the matching number of arguments.
 
 `@instructions`
-- Look at the function in the editor, Subtract. It should take in two arguments and subtract the two numbers. 
+- Look at the function in the editor, `Subtract`. It should take in two arguments and subtract the two numbers. 
 - Create a function named `Subtract` (this part is done for you).
 - Fill in the paremeter so it perferm the function desired.
 - Call the function with appropriate arguments that will output `5`
@@ -166,18 +166,10 @@ type: NormalExercise
 lang: python
 xp: 100
 ```
-In the body of the functions we defined in the prvious exercises, we use print to output the desired outcome. However, we can also use `return ` to escpae the function and send back a desired value. For example:
-
-def Subtract(a, b):
-   return(a-b) #We send the result of a-b back to the calling environment
-  
-difference = Subtract(10,5) #We store the difference between 10 and 5 into the variable named difference
-  
-A function can require as many parameters as you like, but when you call the function, you should pass in the matching number of arguments.
+In the body of the functions we defined in the prvious exercises, we use print to output the desired outcome. However, we can also use `return ` to escpae the function and send back a desired value.
 
 `@instructions`
-- Look at the function in the editor, Subtract. It should take in two arguments and subtract the two numbers. 
-- Create a function named `Subtract` (this part is done for you).
+- Create a function named `` (this part is done for you).
 - Fill in the paremeter so it perferm the function desired.
 - Call the function with appropriate arguments that will output `5`
 
