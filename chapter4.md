@@ -168,10 +168,10 @@ xp: 100
 ```
 In the body of the functions we defined in the prvious exercises, we use print to output the desired outcome. However, we can also use `return ` to escpae the function and send back a desired value. For example:
 
-`def Subtract(a, b):
-   return(a-b) #We send the result of a-b back to the calling environment`
+def Subtract(a, b):
+   return(a-b) #We send the result of a-b back to the calling environment
   
-difference = Subtract(10,5) #We store the difference between 10 and 5 into the variable named difference`
+difference = Subtract(10,5) #We store the difference between 10 and 5 into the variable named difference
   
 A function can require as many parameters as you like, but when you call the function, you should pass in the matching number of arguments.
 
