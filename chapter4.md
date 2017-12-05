@@ -103,3 +103,56 @@ test_function("Sum", not_called_msg = "You didn't call the following function: S
 test_output_contains("2", no_output_msg = "Did you print the result of `1+1`?",pattern = False)
 success_msg("Great work!")
 ```
+
+---
+## Argument and Paremeters
+
+```yaml
+type: NormalExercise
+lang: python
+xp: 100
+```
+In the previous excercises, we work on defeining and calling functions. Now, we are going to learn how to pass variables or values into a function. Looking at the following code: `def Sum(a, b)`. a and b is the parameter of the function, `Sum()`. A `parameter` acts as a variable name for a passed in `argument`. For example, we called the function with the following statement, `Sum(10,26)`. The argument passed in is 10 and 26. When the function was called, a holds the value 10 ,and b hols the value 26.
+  
+A function can require as many parameters as you like, but when you call the function, you should pass in the matching number of arguments.
+
+`@instructions`
+- Look at the function in the editor, Subtract. It should take in two arguments and subtract the two numbers. 
+- Create a function named `Subtract` (this part is done for you).
+- Fill in the paremeter so it perferm the function desired.
+- Call the function with appropriate arguments that will output `5`
+
+`@hint`
+- To pass in arguments, you have to specify the paremeters in the parentheses, (). For example: def Multiply(a,b)
+- To call the function, use the name of the function follow by a parentheses, ().
+- To pass the arguments, type the number you want in the parentheses, (). Remind to seperate different arguments by comma.
+
+`@sample_code`
+```{python}
+# Create a new function named "Subtract"
+def Subtract(___,___):
+    # Print the result of a-b
+    print(a-b)
+  
+# Call the function 
+
+```
+
+`@solution`
+```{python}
+# Create a new function named "Subtract"
+def Subtract(a, b):
+    # Print the result of a-b
+    print(a-b)
+  
+# Call the function 
+Subtract(10,5)
+```
+
+`@sct`
+```{python}
+test_function_definition('Sum', arg_defaults = False)
+test_function("Sum", not_called_msg = "You didn't call the following function: Sum()")
+test_output_contains("2", no_output_msg = "Did you print the result of `1+1`?",pattern = False)
+success_msg("Great work!")
+```
