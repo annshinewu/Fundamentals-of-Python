@@ -64,15 +64,15 @@ xp: 100
 key: c61d77322e
 ```
 After defining a function, it must be called to be implemented. 
-In the previous excercise, we created a function named `hello_world` and call the function in the last statement,`hello_world()`. 
-Using this statement, we tell the program to look for the function name `hello_world` and exexute it
+In the previous exercise, we created a function named `hello_world` and call the function in the last statement,`hello_world()`. 
+Using this statement, we tell the program to look for the function name `hello_world` and execute it
   
 `@instructions`
 - Create a function named `Sum` that prints the answer of `1+1`.
 - Call the function
 
 `@hint`
-To call the function, use the name of the function follow by a parentheses, (), just like the previous excercise where we use `hello_world()`.
+To call the function, use the name of the function follow by a parentheses, (), just like the previous exercise where we use `hello_world()`.
 
 `@sample_code`
 ```{python}
@@ -113,7 +113,7 @@ lang: python
 xp: 100
 key: 8a9e65ebb1
 ```
-In the previous excercises, we work on defeining and calling functions. Now, we are going to learn how to pass variables or values into a function. Looking at the following code: `def Sum(a, b)`. a and b is the parameter of the function, `Sum()`. A `parameter` acts as a variable name for a passed in `argument`. For example, we called the function with the following statement, `Sum(10,26)`. The argument passed in is 10 and 26. When the function was called, a holds the value 10 ,and b hols the value 26.
+In the previous exercises, we work on defeining and calling functions. Now, we are going to learn how to pass variables or values into a function. Looking at the following code: `def Sum(a, b)`. a and b is the parameter of the function, `Sum()`. A `parameter` acts as a variable name for a passed in `argument`. For example, we called the function with the following statement, `Sum(10,26)`. The argument passed in is 10 and 26. When the function was called, a holds the value 10 ,and b hols the value 26.
   
 A function can require as many parameters as you like, but when you call the function, you should pass in the matching number of arguments.
 
