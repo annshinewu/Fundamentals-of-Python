@@ -386,7 +386,37 @@ Lists have some built-in functions that can be used. These are a few commonly us
 
 `@sample_code`
 ```{python}
+practice1 = [12,400,723,4100,-100];
+# Prints the length of `practice1`
+print (len(practice1))
+# Prints the maximum of `practice1`
+print (max(practice1))
+# Prints the minimum of `practice1`
+print (min(practice1))
+# Appends [51,51,51,51,-10,203,-10] to practice1
+practice1.extend([12,401,12,723,-10,203,-10])
+# Count the number of 723s in practice1
+print (practice1.count(723))
+# Inserts 100 at the 2nd index
+practice1.insert(2,100)
+print (practice1)
+# Sorts list1
+practice1.sort()
+print (practice1)
 
+
+list1 = [___,___,___,___,___];
+print (___(___))
+del list1[___]
+print (___(___))
+print (___(___))
+print (___(___))
+list1.___([___,___,___,___,___,___,___])
+print (list1.___(___))
+list1.___(___,___)
+print (___)
+list1.___()
+print (___)
 ```
 
 `@solution`
@@ -398,7 +428,7 @@ print (len(list1))
 print (max(list1))
 print (min(list1))
 list1.extend([51,51,51,51,-10,203,-10])
-list1.count(51)
+print(list1.count(51))
 list1.insert(2,3)
 print (list1)
 list1.sort()
@@ -411,8 +441,86 @@ test_output_contains("5", pattern=False, no_output_msg= "You have not printed th
 test_output_contains("4", pattern=False, no_output_msg= "You have not printed the length of list1 correctly")
 test_output_contains("4000", pattern=False, no_output_msg= "You have not printed the maximum of list1 correctly")
 test_output_contains("-10", pattern=False, no_output_msg= "You have not printed the minimum of list1 correctly")
+test_output_contains("5", pattern=False, no_output_msg= "You have not printed the number of occurences for 51 correctly")
 test_output_contains("[51, 203, 3, 4000, -10, 51, 51, 51, 51, -10, 203, -10]", pattern=False, no_output_msg= "You have not printed list1 correctly")
 test_output_contains("[-10, -10, -10, 3, 51, 51, 51, 51, 51, 203, 203, 4000]", pattern=False, no_output_msg= "You have not printed list1 correctly")
 test_object("list1")
+
+```
+
+---
+## Introducing Dictionaries
+
+```yaml
+type: NormalExercise
+key: 3d80ac58c0
+lang: python
+xp: 100
+skills: 2
+```
+What is a dictionary in Python?
+- A way of looking at a dictionary is a set of `key: value` pairs with the requirement that a key must be unique within that dictionary.
+- Like a list, a dictionary also contains a sequence of elements. However, the difference is that it is not indexed by a range of numbers, instead by keys.
+- Keys can be any immutable data type such as numbers, strings, tuples containing numbers, strings, or tuples. It is important to remember that if the tuple contains a mutable object, it cannot serve as a key.
+
+`@instructions`
+Following the sample code provided, work on the exercise below:
+- Declare a dictionary called `dict1` as {'Physics': 'A+', 'Biology': 'B+', 'Chemistry': 'A-', 'Python': 'A'}
+- This dictionary uses various classes as keys and the grade within that class as the value
+- Print `dict1`
+- Print out the value for the key "Biology"
+- Update the grade for "Chemistry" to B-
+- Add a new class called "Calculus" and set its value to "D+"
+- Delete the entry with a key of "Python"
+- Print `dict1`
+
+`@hint`
+
+`@pre_exercise_code`
+```{python}
+
+```
+
+`@sample_code`
+```{python}
+# Declares and initializes a dictionry with the values {'iPhone5': 7000, 'iPhone4': 5000,'iPhone6':100000,'iPhone7': 200000, 'iPhone8': 400000, 'iPhoneX': 1050000}
+# The keys are the various iPhones, while the value represents their individual price. 
+practice1 = {'iPhone5': 7000, 'iPhone4': 5000,'iPhone6':100000,'iPhone7': 200000, 'iPhone8': 400000}
+print (practice1)
+# Access and print the value with the key 'iPhone7'
+print(practice1['iPhone7'])
+# Updates the price of an iPhone4 to 0
+practice1['iPhone4'] = 0
+# Adds a new entry within the dictionary
+practice1['iPhoneX'] = 1050000
+# Deletes the entry with the key of 'iPhone5'
+del practice1['iPhone5']
+print (practice1)
+
+dict1 = {'___': '___', '___': '___', '___': '___', '___': '___'};
+print (dict1)
+print (dict1['___'])
+dict1['___'] = '___'
+dict1['___'] = '___'
+del dict1['___'];
+print (dict1)
+```
+
+`@solution`
+```{python}
+dict1 = {'Physics': 'A+', 'Biology': 'B+', 'Chemistry': 'A-', 'Python': 'A'};
+print (dict1)
+print (dict1['Biology'])
+dict1['Chemistry'] = 'B-'
+dict1['Calculus'] = 'D+'
+del dict1['Python'];
+print (dict1)
+```
+
+`@sct`
+```{python}
+test_output_contains("{'Physics': 'A+', 'Chemistry': 'A-', 'Python': 'A', 'Biology': 'B+'}", pattern=False, no_output_msg= "You have not printed dict1 correctly")
+test_output_contains("B+", pattern=False, no_output_msg= "You have not printed the value for the key 'Biology' correctly")
+test_output_contains("{'Biology': 'B+', 'Chemistry': 'B-', 'Physics': 'A+', 'Calculus': 'D+'}", pattern=False, no_output_msg= "You have not printed the updated version of dict1 correctly")
 
 ```
