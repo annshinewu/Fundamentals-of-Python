@@ -165,6 +165,7 @@ success_msg("Great work!")
 type: NormalExercise
 lang: python
 xp: 100
+key: 7cc546337c
 ```
 In the body of the functions we defined in the prvious exercises, we use print to output the desired outcome. However, we can also use `return ` to escpae the function and send back a desired value.
 
@@ -183,30 +184,30 @@ In the body of the functions we defined in the prvious exercises, we use print t
 ```{python}
 # Create a new function named "CombineStr"
 def CombineStr(___,___):
-   # Combine the two string
-   combined = _____+" "+_____
-   # Return the string
-   
+    # Combine the two string
+    combined = _____+" "+_____
+    # Return the string
+    
 # Call the function 
-print(CombineStr(Winnie,Li))
+print(CombineStr("Winnie","Li"))
 ```
 
 `@solution`
 ```{python}
 # Create a new function named "CombineStr"
 def CombineStr(str1,str2):
-   # Combine the two string
-   combined = str1+" "+str2
-   # Return the string
-   return combined
+    # Combine the two string
+    combined = str1+" "+str2
+    # Return the string
+    return combined
   
 # Call the function 
-print(CombineStr(Winnie,Li))
+print(CombineStr("Winnie","Li"))
 ```
 
 `@sct`
 ```{python}
-test_output_contains(" Winnie Li", no_output_msg = "The output is inccorect. Make sure to return the correct string.",pattern = False)
+test_output_contains("Winnie Li", no_output_msg = "The output is inccorect. Make sure to return the correct string.",pattern = False)
 test_function_definition("CombineStr", arg_names = False, arg_defaults = False)
 test_function("CombineStr", not_called_msg = "You didn't call the following function: ()")
 success_msg("Great work!")
