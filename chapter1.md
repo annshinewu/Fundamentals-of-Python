@@ -1,11 +1,11 @@
 ---
-title       : Insert the chapter title here
-description : Insert the chapter description here
+title       : Standard Data Types
+description : In this chapter, we will explore the various standard data types used in Python.
 attachments :
-  slides_link : https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf
+  slides_link : 
 
 ---
-## A really bad movie
+## Introducing Standard Data Types
 
 ```yaml
 type: MultipleChoiceExercise
@@ -15,29 +15,25 @@ skills: 1
 key: c4dee315d7
 ```
 
-Have a look at the plot that showed up in the viewer to the right. Which type of movies have the worst rating assigned to them?
+Which one of these is not one of the five standard data types in Python?
 
 `@instructions`
-- Long movies, clearly
-- Short movies, clearly
-- Long movies, but the correlation seems weak
-- Short movies, but the correlation seems weak
+- Number
+- While Loop
+- String
+- Tuple
+- List
+- Dictionary
 
 `@hint`
-Have a look at the plot. Do you see a trend in the dots?
+Which does not represent or store a specific value or variable?
 
 `@pre_exercise_code`
 ```{python}
 # The pre exercise code runs code to initialize the user's workspace.
 # You can use it to load packages, initialize datasets and draw a plot in the viewer
 
-import pandas as pd
-import matplotlib.pyplot as plt
 
-movies = pd.read_csv("http://s3.amazonaws.com/assets.datacamp.com/course/introduction_to_r/movies.csv")
-
-plt.scatter(movies.runtime, movies.rating)
-plt.show()
 ```
 
 `@sct`
@@ -45,8 +41,8 @@ plt.show()
 # SCT written with pythonwhat: https://github.com/datacamp/pythonwhat/wiki
 
 msg_bad = "That is not correct!"
-msg_success = "Exactly! The correlation is very weak though."
-test_mc(4, [msg_bad, msg_bad, msg_bad, msg_success])
+msg_success = "Exactly! A while loop is not a standard data type."
+test_mc(2, [msg_bad, msg_success, msg_bad, msg_bad, msg_bad, msg_bad])
 ```
 
 ---
