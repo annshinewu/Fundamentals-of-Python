@@ -603,3 +603,51 @@ test_student_typed("dict1.items", pattern = False)
 test_object("dict1")
 
 ```
+
+
+---
+## Lets Practice Using Strings & Lists & Dictionaries!
+
+```yaml
+type: NormalExercise
+key: 3f818a9030
+lang: python
+xp: 100
+skills: 2
+```
+After learning how to use strings, lists, and dictionaries in this chapter, lets have an exercise to review all the information you have learned.
+
+`@instructions`
+- Initialize a string called `string1` and set it to "Python"
+- Initialize a string called `string2` and set it to " and Game Programming"
+- Initialize a string called `string3` and set it to the concatenation of `string1` and `string2`
+- Print out `string3` five times
+- Print out the first character of `string3`
+- Print out the 3rd to 8th characters of `string3`
+- Initialize a list called `list1` and set it to ['Python','Ethics','Economics','PE','Robotics'];
+- Initialize a list called `list2` and set it to [88,93,70,93,100]
+- Print out the maximum in `list2`
+- Print out the minimum in `list2`
+- Print out the number of 93s in `list2`
+- Initialize a dictionary called `dict1` and set it to {'Assignment1': 88, 'Assignment2': 93, 'Assignment3': 70, 'Assignment4': 93, 'Assignment5': 100};
+`@hint`
+
+`@pre_exercise_code`
+```{python}
+
+```
+
+`@sample_code`
+```{python}
+
+```
+
+`@solution`
+```{python}
+
+```
+
+`@sct`
+```{python}
+
+```
