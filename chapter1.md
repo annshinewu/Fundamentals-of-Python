@@ -186,7 +186,7 @@ success_msg("Great work!")
 ```
 
 ---
-## Introducing Lists
+## Introducing Lists!
 
 ```yaml
 type: NormalExercise
@@ -449,7 +449,7 @@ test_object("list1")
 ```
 
 ---
-## Introducing Dictionaries
+## Introducing Dictionaries!
 
 ```yaml
 type: NormalExercise
