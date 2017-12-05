@@ -542,7 +542,6 @@ There are various built-in functions that can be used with dictionaries. The fol
 3. dict.keys()
 4. dict.values()
 5. dict.items()
-6. dict.has_key(key)
 
 `@instructions`
 Utilize the introduced built-in functions for the following exercise
@@ -624,12 +623,22 @@ After learning how to use strings, lists, and dictionaries in this chapter, lets
 - Print out `string3` five times
 - Print out the first character of `string3`
 - Print out the 3rd to 8th characters of `string3`
-- Initialize a list called `list1` and set it to ['Python','Ethics','Economics','PE','Robotics'];
+- Initialize a list called `list1` and set it to ['Python','Ethics','Economics','PE','Robotics']
 - Initialize a list called `list2` and set it to [88,93,70,93,100]
 - Print out the maximum in `list2`
 - Print out the minimum in `list2`
 - Print out the number of 93s in `list2`
-- Initialize a dictionary called `dict1` and set it to {'Assignment1': 88, 'Assignment2': 93, 'Assignment3': 70, 'Assignment4': 93, 'Assignment5': 100};
+- Extend `list1` to include `list2`
+- Delete the first element in  `list2`
+- Sort `list2`
+- Print `list1`
+- Print `list2`
+- Initialize a dictionary called `dict1` and set it to {'Assignment1': 88, 'Assignment2': 93, 'Assignment3': 70, 'Assignment4': 93, 'Assignment5': 100}
+- Print out the length of `dict1`
+- Add a new entry inside `dict1` with the key 'Assignment6' and the value of 90
+- Print out the length of `dict1`
+- Delete the entry with the key 'Assignment3'
+- Print out a string form of `dict1`
 `@hint`
 
 `@pre_exercise_code`
@@ -639,15 +648,74 @@ After learning how to use strings, lists, and dictionaries in this chapter, lets
 
 `@sample_code`
 ```{python}
-
+string1 = "___"
+string2 = "___"
+string3 = ___ + ___
+print (___ * ___)
+print (string3[___])
+print (string3[___ : ___])
+list1 = [___,___,___,___,___]
+list2 = [___,___,___,___,___]
+print (___(list2))
+print (___(list2))
+print (list2.___(93))
+list1.___(list2)
+del list2[___]
+list2.___()
+print (list1)
+print (list2)
+dict1 = {___: ___, ___: ___, ___: ___,___: ___,___: ___}
+print (___(dict1))
+dict1[___] = ___
+print (___(dict1))
+del dict1[___]
+print (___(dict1))
 ```
 
 `@solution`
 ```{python}
-
+string1 = "Python"
+string2 = " and Game Programming"
+string3 = string1 + string2
+print (string3 * 5)
+print (string3[0])
+print (string3[2:8])
+list1 = ['Python','Ethics','Economics','PE','Robotics']
+list2 = [88,93,70,93,100]
+print (max(list2))
+print (min(list2))
+print (list2.count(93))
+list1.extend(list2)
+del list2[0]
+list2.sort()
+print (list1)
+print (list2)
+dict1 = {'Assignment1': 88, 'Assignment2': 93, 'Assignment3': 70, 'Assignment4': 93, 'Assignment5': 100}
+print (len(dict1))
+dict1['Assignment6'] = 90
+print (len(dict1))
+del dict1['Assignment3']
+print (str(dict1))
 ```
 
 `@sct`
 ```{python}
+test_output_contains("Python and Game ProgrammingPython and Game ProgrammingPython and Game ProgrammingPython and Game ProgrammingPython and Game Programming", pattern=False, no_output_msg= "You have not printed string3 five times correctly")
+test_output_contains("P", pattern=False, no_output_msg= "You have not printed the first character of string3 correctly")
+test_output_contains("thon a", pattern=False, no_output_msg= "You have not printed 3rd to 8th characters of string3 correctly")
+test_output_contains("100", pattern=False, no_output_msg= "You have not printed the maximum for list2 correctly")
+test_output_contains("70", pattern=False, no_output_msg= "You have not printed the minimum for list2 correctly")
+test_output_contains("2", pattern=False, no_output_msg= "You have not printed the number of times 93 appears in list2 correctly")
+test_output_contains("['Python', 'Ethics', 'Economics', 'PE', 'Robotics', 88, 93, 70, 93, 100]", pattern=False, no_output_msg= "You have not printed list1 correctly")
+test_output_contains("[70, 93, 93, 100]", pattern=False, no_output_msg= "You have not printed list2 correctly")
+test_output_contains("5", pattern=False, no_output_msg= "You have not printed the length of dict1 correctly")
+test_output_contains("6", pattern=False, no_output_msg= "You have not printed the updated length of dict1 correctly")
+test_object("dict1")
+test_object("list1")
+test_object("list2")
+test_object("string1")
+test_object("string2")
+test_object("string3")
+test_student_typed("str(dict1)", pattern = False)
 
 ```
