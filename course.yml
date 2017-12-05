@@ -1,6 +1,7 @@
-title                : Fundamentals of Python
-description          : This is an automatically generated demo course which will help you on your way to create an awesome DataCamp course.
+title                : Decision Making & Loops
+description          : This course teaches you how to make the computer make logical decisions as well as loopings.
 university           : DataCamp
 difficulty_level     : 2
 time_needed          : 1 hour
 programming_language : python
+

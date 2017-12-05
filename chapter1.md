@@ -1,137 +1,348 @@
 ---
-title       : Insert the chapter title here
+title       : Decision Making & Loops
 description : Insert the chapter description here
 attachments :
   slides_link : https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf
 
----
-## A really bad movie
-
-```yaml
-type: MultipleChoiceExercise
-lang: python
-xp: 50
-skills: 1
-key: c4dee315d7
-```
-
-Have a look at the plot that showed up in the viewer to the right. Which type of movies have the worst rating assigned to them?
-
-`@instructions`
-- Long movies, clearly
-- Short movies, clearly
-- Long movies, but the correlation seems weak
-- Short movies, but the correlation seems weak
-
-`@hint`
-Have a look at the plot. Do you see a trend in the dots?
-
-`@pre_exercise_code`
-```{python}
-# The pre exercise code runs code to initialize the user's workspace.
-# You can use it to load packages, initialize datasets and draw a plot in the viewer
-
-import pandas as pd
-import matplotlib.pyplot as plt
-
-movies = pd.read_csv("http://s3.amazonaws.com/assets.datacamp.com/course/introduction_to_r/movies.csv")
-
-plt.scatter(movies.runtime, movies.rating)
-plt.show()
-```
-
-`@sct`
-```{python}
-# SCT written with pythonwhat: https://github.com/datacamp/pythonwhat/wiki
-
-msg_bad = "That is not correct!"
-msg_success = "Exactly! The correlation is very weak though."
-test_mc(4, [msg_bad, msg_bad, msg_bad, msg_success])
-```
 
 ---
-## Plot the movies yourself
+## Comparators
 
 ```yaml
 type: NormalExercise
+key: d286c86bf8
 lang: python
 xp: 100
-skills: 1
-key: b0a5dd001a
+skills: 2
 ```
 
-Do you remember the plot of the last exercise? Let's make an even cooler plot!
+There are six types of comparators:
 
-A dataset of movies, `movies`, is available in the workspace.
+1. (==) : Equals to
+    
+2. (<) : Less than
+    
+3. (<=) : Less than or equal to
+    
+4. (>) : Greater than
+
+5. (>=) : Greater than or equal to
+
+6. (!=) : Not equal to
+
+Each of these comparator statements yields one of two values: True, False.
 
 `@instructions`
-- The first function, `np.unique()`, uses the `unique()` function of the `numpy` package to get integer values for the movie genres. You don't have to change this code, just have a look!
-- Import `pyplot` in the `matplotlib` package. Set an alias for this import: `plt`.
-- Use `plt.scatter()` to plot `movies.runtime` onto the x-axis, `movies.rating` onto the y-axis and use `ints` for the color of the dots. You should use the first and second positional argument, and the `c` keyword.
-- Show the plot using `plt.show()`.
+
+Look at the unfinished statements.
+
+Finish them by adding True or Flase, depending on the comment in the line above, to the variables.
+
+Note that characters are compared using ASCII numbers (A = 65 and Z = 90 in increasing order)
+
+So for example : b < c yields True
 
 `@hint`
-- You don't have to program anything for the first instruction, just take a look at the first line of code.
-- Use `import ___ as ___` to import `matplotlib.pyplot` as `plt`.
-- Use `plt.scatter(___, ___, c = ___)` for the third instruction.
-- You'll always have to type in `plt.show()` to show the plot you created.
+Try running the codes in the Python Shell!
 
 `@pre_exercise_code`
 ```{python}
-import pandas as pd
-movies = pd.read_csv("http://s3.amazonaws.com/assets.datacamp.com/course/introduction_to_r/movies.csv")
 
-import numpy as np
 ```
 
 `@sample_code`
 ```{python}
-# Get integer values for genres
-_, ints = np.unique(movies.genre, return_inverse = True)
+# 5 < 4
+bool_one =
 
-# Import matplotlib.pyplot
+# 5 != 3
+bool_two =
 
+# (5 * 3) > (4 * 4)
+bool_three =
 
-# Make a scatter plot: runtime on  x-axis, rating on y-axis and set c to ints
+# 100 >= (50 * 2)
+bool_four =
 
+# 70 <= (4 * 35)
+bool_five =
 
-# Show the plot
+# (25 * 3) == (6 * 5)
+bool_six =
+
+# 'g' > 'b'
+bool_seven =
+
+# 'r' == 'a'
+bool_eight =
 
 ```
 
 `@solution`
 ```{python}
-# Get integer values for genres
-_, ints = np.unique(movies.genre, return_inverse = True)
+# 5 < 4
+bool_one = False
 
-# Import matplotlib.pyplot
-import matplotlib.pyplot as plt
+# 5 != 3
+bool_two = True
 
-# Make a scatter plot: runtime on  x-axis, rating on y-axis and set c to ints
-plt.scatter(movies.runtime, movies.rating, c=ints)
+# (5 * 3) > (4 * 4)
+bool_three = False
 
-# Show the plot
-plt.show()
+# 100 >= (50 * 2)
+bool_four = True
+
+# 70 <= (4 * 35)
+bool_five = True
+
+# (25 * 3) == (6 * 5)
+bool_six = False
+
+# 'g' > 'b'
+bool_seven = True
+
+# 'r' == 'a'
+bool_eight = False
+
 ```
 
 `@sct`
 ```{python}
-# SCT written with pythonwhat: https://github.com/datacamp/pythonwhat/wiki
+test_student_typed('bool_one = False', pattern = False, not_typed_msg = "bool_one seems a bit off.")
+test_student_typed('bool_two = True', pattern = False, not_typed_msg = "Check bool_two again.")
+test_student_typed('bool_three = False', pattern = False, not_typed_msg = "Are you sure about bool_three?")
+test_student_typed('bool_four = True', pattern = False, not_typed_msg = "Look at bool_four one more time.")
+test_student_typed('bool_five = True', pattern = False, not_typed_msg = "bool_five seems a bit off")
+test_student_typed('bool_six = False', pattern = False, not_typed_msg = "Check bool_six again.")
+test_student_typed('bool_seven = True', pattern = False, not_typed_msg = "Are you sure about bool_seven?")
+test_student_typed('bool_eight = False', pattern = False, not_typed_msg = "Look at bool_eight one more time.")
 
-test_function("numpy.unique",
-              not_called_msg = "Don't remove the call of `np.unique` to define `ints`.",
-              incorrect_msg = "Don't change the call of `np.unique` to define `ints`.")
+success_msg = "Congradulations!"
+```
 
-test_object("ints",
-            undefined_msg = "Don't remove the definition of the predefined `ints` object.",
-            incorrect_msg = "Don't change the definition of the predefined `ints` object.")
 
-test_import("matplotlib.pyplot", same_as = True)
+---
+## Boolean Operators
 
-test_function("matplotlib.pyplot.scatter",
-              incorrect_msg = "You didn't use `plt.scatter()` correctly, have another look at the instructions.")
+```yaml
+type: NormalExercise
+key: 5149299321
+lang: python
+xp: 100
+skills: 2
+```
+Now you have learned about comparators, lets combine more comparators in a statement!
 
-test_function("matplotlib.pyplot.show")
+Key words are used to combine the comparators:
 
-success_msg("Great work!")
+1. (and) : requires both statement to be True
+
+2. (or) : only requires one statement to be True
+
+3. (not) : Gives the opposite of the statement
+
+
+
+`@instructions`
+Assign the according output for each statement in the comment above of the variables
+
+For example:
+
+(25 * 5) == (4 * 16) or (2 * 3) == (6)
+
+bool = True
+
+Since it is an 'or' statement, and the second statement is true, the value assigned should be true.
+
+`@hint`
+Remember what 'and' and 'or' requires
+
+Be careful of the 'Not'
+
+`@pre_exercise_code`
+```{python}
+
+```
+
+`@sample_code`
+```{python}
+# (34) != (43) and (3*12) > (12)
+bool_one = 
+
+# (22) <= (11*2) or Not ((4) > (12)
+bool_two = 
+
+# (3) >= (43) or Not((42) > (12))
+bool_three = 
+
+# (7*8) != (78) and Not False
+bool_four = 
+
+# Not False and Not True
+bool_five = 
+```
+
+`@solution`
+```{python}
+# (34) != (43) and (3*12) > (12)
+bool_one = True
+
+# (22) <= (11*2) or Not ((4) > (12)
+bool_two = True
+
+# (3) >= (43) or Not((42) > (12))
+bool_three = False
+
+# (7*8) != (78) and Not False
+bool_four = True
+
+# Not False and Not True
+bool_five = False
+```
+
+`@sct`
+```{python}
+test_student_typed('bool_one = True', pattern = False, not_typed_msg = "bool_one seems a bit off.")
+test_student_typed('bool_two = True', pattern = False, not_typed_msg = "Check bool_two again.")
+test_student_typed('bool_three = False', pattern = False, not_typed_msg = "Are you sure about bool_three?")
+test_student_typed('bool_four = True', pattern = False, not_typed_msg = "Look at bool_four one more time.")
+test_student_typed('bool_five = False', pattern = False, not_typed_msg = "bool_five seems a bit off")
+```
+
+---
+## Logic (If Else)
+
+```yaml
+type: NormalExercise
+key: 3743d3d127
+lang: python
+xp: 100
+skills: 2
+```
+'If' is a conditional statement that executes the code wrapped inside if the expression is True.
+
+The syntax for If statemnts is:
+
+    if (5 == 5):
+        print('Hi')
+        
+Since the expression in the if statement (5 == 5) yields True, the statement wrapper inside the if statement will be executed and 'Hi' will be printed
+
+'Else' is a complement statement that executes the code inside if the if statement is False
+
+The syntax for If-Else statements is:
+
+    if(5!=5):
+        print('Hi')
+    else:
+        print('Bye')
+        
+Since the expression in the if statement (5!=5) yields False, the statement in the if statement will not be executed, and thus moved on to the next statement
+the else statement, executing the statement wrapped in else, which is to print 'Bye'
+
+`@instructions`
+Create an if statement comparing variable x with the string 'bananas', and make the statement wrapped inside print the string 'I love bananas!'
+
+Then, create an else statement with the statement that prints the string 'I love apples!'
+
+Run the code, and see which output will be printed!
+
+(variable x has already been assigned to a value)
+
+`@hint`
+Review the syntax 
+`@pre_exercise_code`
+```{python}
+x = 'bananas'
+
+```
+
+`@sample_code`
+```{python}
+
+```
+
+`@solution`
+```{python}
+if (x == 'bananas'):
+    print ('I love bananas!')
+else:
+    print ('I love apples!')
+```
+
+`@sct`
+```{python}
+test_output_contains('I love bananas!', pattern = False, output_msg = 'Did you properly code the if expression?', state = None)
+```
+
+
+---
+## Elif Statement
+
+```yaml
+type: NormalExercise
+key: 2d9ecedd68
+lang: python
+xp: 100
+skills: 2
+```
+
+Another statement other than if and else is 'elif', which is short for else if
+
+The elif statement is used when the if expression is False
+
+It allows the programmer to provide a new condition after the first if statement
+
+The statement in elif will execute if its expression yields True, or else it passes to the next elif statement or else statement
+
+There can be infinite amount of elif statement, but in an if-elif-else statement, only one statement will be executed.
+
+Syntax of elif statements:
+
+    if(5==6):
+        print('one')
+    elif(5==5):
+        print('two')
+    else:
+        print('three')
+Since 5 does not equal to 6, the if statement will not be executed, so the code moves on the the next statement.
+
+in the elif expression, since 5 equals to 5, the computer will execute the statement wrapped inside elif and print the string 'two'
+
+Since one statement has already been executed, the program jumps out from the if-elif-else statement, so the else statement will not be executed.
+
+`@instructions`
+Add an elif statement in between the if and else statements, and set the expression so that it compares variable x to string 'avocado' by seeing if they are equal
+
+Run the code and see what is the output!
+`@hint`
+Review the elif syntax and make sure to add the correct expression
+
+`@pre_exercise_code`
+```{python}
+x = 'avocados'
+```
+
+`@sample_code`
+```{python}
+if (x == 'bananas'):
+    print ('I love bananas!')
+#insert your code here
+else:
+    print ('I love apples!')
+```
+
+`@solution`
+```{python}
+if (x == 'bananas'):
+    print ('I love bananas!')
+elif(x == 'avocados'):
+    print ('I love avocados!')
+else:
+    print ('I love apples!')
+```
+
+`@sct`
+```{python}
+
 ```
