@@ -151,8 +151,8 @@ Subtract(10,5)
 
 `@sct`
 ```{python}
-test_function_definition('Sum', arg_defaults = False)
-test_function("Sum", not_called_msg = "You didn't call the following function: Sum()")
-test_output_contains("2", no_output_msg = "Did you print the result of `1+1`?",pattern = False)
+test_function_definition('Sum', arg_names = True, arg_defaults = False)
+test_function("Subtract", not_called_msg = "You didn't call the following function: ()")
+test_output_contains("5", no_output_msg = "Make sure the difference between two arguments is `5`?",pattern = False)
 success_msg("Great work!")
 ```
