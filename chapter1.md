@@ -184,3 +184,48 @@ test_output_contains("This is an exercise to print strings. YAY!", pattern=False
 
 success_msg("Great work!")
 ```
+
+---
+## Introducing Lists
+
+```yaml
+type: NormalExercise
+key: 8cb08ba668
+lang: python
+xp: 100
+skills: 2
+```
+What is a list?
+- A list in python holds a sequence of elements. Each element will have its own index (or position). It is also important to remember that the first index is 0.
+- Also, the elements in a list do not need to be the same type.
+- For example, in a list of [1992, "Hello", "World", -102], the first element (1992) will have an index of 0.
+
+`@instructions`
+- Elements in a list can be accessed, updated, or deleted. Look at the provided sample code to learn how to perform these operations.
+- Then, follow the instructions shown within comments to complete this exercise!
+`@hint`
+
+`@pre_exercise_code`
+```{python}
+
+
+```
+
+`@sample_code`
+```{python}
+list1 = [0,1,2,3,4,5,6,"Seven", "Eight", "Nine", "Ten"]    # Declares and initalizes a list
+firstElement = list1[0]    # In order to access an element within the list, you will call list_name[index_of_element]
+print (firstElement) # It will print 0
+subsetElement = list1[3:5] # Accesses the 4th element to the 5th element
+print (subsetElement) # It will print [3, 4]
+```
+
+`@solution`
+```{python}
+
+```
+
+`@sct`
+```{python}
+
+```
