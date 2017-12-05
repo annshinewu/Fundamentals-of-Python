@@ -519,8 +519,9 @@ print (dict1)
 
 `@sct`
 ```{python}
-test_output_contains("{'Physics': 'A+', 'Chemistry': 'A-', 'Python': 'A', 'Biology': 'B+'}", pattern=False, no_output_msg= "You have not printed dict1 correctly")
+test_output_contains("{'Chemistry': 'A-', 'Physics': 'A+', 'Biology': 'B+', 'Python': 'A'}", pattern=False, no_output_msg= "You have not printed dict1 correctly")
 test_output_contains("B+", pattern=False, no_output_msg= "You have not printed the value for the key 'Biology' correctly")
-test_output_contains("{'Biology': 'B+', 'Chemistry': 'B-', 'Physics': 'A+', 'Calculus': 'D+'}", pattern=False, no_output_msg= "You have not printed the updated version of dict1 correctly")
+test_output_contains("{'Chemistry': 'B-', 'Physics': 'A+', 'Calculus': 'D+', 'Biology': 'B+'}", pattern=False, no_output_msg= "You have not printed the updated version of dict1 correctly")
+test_object("dict1")
 
 ```
