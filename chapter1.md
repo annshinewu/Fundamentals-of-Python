@@ -462,10 +462,11 @@ What is a dictionary in Python?
 - A way of looking at a dictionary is a set of `key: value` pairs with the requirement that a key must be unique within that dictionary.
 - Like a list, a dictionary also contains a sequence of elements. However, the difference is that it is not indexed by a range of numbers, instead by keys.
 - Keys can be any immutable data type such as numbers, strings, tuples containing numbers, strings, or tuples. It is important to remember that if the tuple contains a mutable object, it cannot serve as a key.
+- Also, there cannot be more than one entry per key. When duplicate keys are encountered, the last assignment wins.
 
 `@instructions`
 Following the sample code provided, work on the exercise below:
-- Declare a dictionary called `dict1` as {'Physics': 'A+', 'Biology': 'B+', 'Chemistry': 'A-', 'Python': 'A'}
+- Declare and initialize a dictionary called `dict1` as {'Physics': 'A+', 'Biology': 'B+', 'Chemistry': 'A-', 'Python': 'A'}
 - This dictionary uses various classes as keys and the grade within that class as the value
 - Print `dict1`
 - Print out the value for the key "Biology"
@@ -486,7 +487,8 @@ Following the sample code provided, work on the exercise below:
 # Declares and initializes a dictionry with the values {'iPhone5': 7000, 'iPhone4': 5000,'iPhone6':100000,'iPhone7': 200000, 'iPhone8': 400000, 'iPhoneX': 1050000}
 # The keys are the various iPhones, while the value represents their individual price. 
 practice1 = {'iPhone5': 7000, 'iPhone4': 5000,'iPhone6':100000,'iPhone7': 200000, 'iPhone8': 400000}
-print (practice1)
+# str(dict_name) converts a dictionary to a string representation, then the print function will print the string representation
+print (str(practice1))
 # Access and print the value with the key 'iPhone7'
 print(practice1['iPhone7'])
 # Updates the price of an iPhone4 to 0
@@ -495,33 +497,109 @@ practice1['iPhone4'] = 0
 practice1['iPhoneX'] = 1050000
 # Deletes the entry with the key of 'iPhone5'
 del practice1['iPhone5']
-print (practice1)
+print (str(practice1))
 
 dict1 = {'___': '___', '___': '___', '___': '___', '___': '___'};
-print (dict1)
+print (___(___))
 print (dict1['___'])
 dict1['___'] = '___'
 dict1['___'] = '___'
 del dict1['___'];
-print (dict1)
+print (___(___))
 ```
 
 `@solution`
 ```{python}
 dict1 = {'Physics': 'A+', 'Biology': 'B+', 'Chemistry': 'A-', 'Python': 'A'};
-print (dict1)
+print (str(dict1))
 print (dict1['Biology'])
 dict1['Chemistry'] = 'B-'
 dict1['Calculus'] = 'D+'
 del dict1['Python'];
-print (dict1)
+print (str(dict1))
 ```
 
 `@sct`
 ```{python}
-test_output_contains("{'Chemistry': 'A-', 'Physics': 'A+', 'Biology': 'B+', 'Python': 'A'}", pattern=False, no_output_msg= "You have not printed dict1 correctly")
 test_output_contains("B+", pattern=False, no_output_msg= "You have not printed the value for the key 'Biology' correctly")
-test_output_contains("{'Chemistry': 'B-', 'Physics': 'A+', 'Calculus': 'D+', 'Biology': 'B+'}", pattern=False, no_output_msg= "You have not printed the updated version of dict1 correctly")
+test_object("dict1")
+
+```
+
+---
+## Built-In Dictionary Functions
+
+```yaml
+type: NormalExercise
+key: d0c377494d
+lang: python
+xp: 100
+skills: 2
+```
+There are various built-in functions that can be used with dictionaries. The following are a few examples of the most common functions:
+1. len(dict)
+2. str(dict)
+3. dict.keys()
+4. dict.values()
+5. dict.items()
+6. dict.has_key(key)
+
+`@instructions`
+Utilize the introduced built-in functions for the following exercise
+- Declare and initialize a dictionary called `dict1` as {'Physics': 'A+', 'Biology': 'B+', 'Chemistry': 'A-', 'Python': 'A'}
+- Print the length of `dict1`
+- Print a list of all the keys in `dict1`
+- Print a list of all the values in `dict1`
+- Print a list of tuples for all the elements in `dict1`
+
+`@hint`
+
+`@pre_exercise_code`
+```{python}
+
+```
+
+`@sample_code`
+```{python}
+practice1 = {'iPhone5': 7000, 'iPhone4': 5000,'iPhone6':100000,'iPhone7': 200000, 'iPhone8': 400000}
+# Prints the length of practice1
+print (len(practice1))
+# Prints all the keys of practice1
+print ("Keys:")
+print (practice1.keys())
+# Prints all the values of practice1
+print ("Values:")
+print (practice1.values())
+# Prints all the elements of practice1 in a tuple
+print ("Elements:")
+print (practice1.items())
+
+dict1 = {'___': '___', '___': '___', '___': '___', '___': '___'};
+print (___(___))
+print (___.___())
+print (___.___())
+print (___.___())
+```
+
+`@solution`
+```{python}
+dict1 = {'Physics': 'A+', 'Biology': 'B+', 'Chemistry': 'A-', 'Python': 'A'};
+print (len(dict1))
+print (dict1.keys())
+print (dict1.values())
+print (dict1.items())
+```
+
+`@sct`
+```{python}
+test_output_contains("4", pattern=False, no_output_msg= "You have not printed the length for the dictionary correctly")
+test_output_contains("dict_keys([", pattern=False, no_output_msg= "You have not printed the keys for dict1 correctly")
+test_output_contains("dict_values([", pattern=False, no_output_msg= "You have not printed the values for dict1 correctly")
+test_output_contains("dict_items([", pattern=False, no_output_msg= "You have not printed the items for dict1 correctly")
+test_student_typed("dict1.keys", pattern = False)
+test_student_typed("dict1.values", pattern = False)
+test_student_typed("dict1.items", pattern = False)
+
 test_object("dict1")
 
 ```
