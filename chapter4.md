@@ -169,41 +169,45 @@ xp: 100
 In the body of the functions we defined in the prvious exercises, we use print to output the desired outcome. However, we can also use `return ` to escpae the function and send back a desired value.
 
 `@instructions`
-- Create a function named `` (this part is done for you).
-- Fill in the paremeter so it perferm the function desired.
-- Call the function with appropriate arguments that will output `5`
+- Create a function named `CombineStr`.
+- Fill in the paremeter so takes in two arguments.
+- In the body of the function, combine the two `string` arguments, with a space between them and return the combined string.
+- Call the function with appropriate arguments. (This part is done for you)
 
 `@hint`
 - To pass in arguments, you have to specify the paremeters in the parentheses, (). For example: def Multiply(a,b)
-- To call the function, use the name of the function follow by a parentheses, ().
-- To pass the arguments, type the number you want in the parentheses, (). Remind to seperate different arguments by comma.
+- To combine two string use `+`. For example: str1+str2
+- To return the string type `return` and follow by the string that you want to return.
 
 `@sample_code`
 ```{python}
-# Create a new function named "Subtract"
-def Subtract(___,___):
-    # Print the result of a-b
-    print(a-b)
-  
+# Create a new function named "CombineStr"
+def CombineStr(___,___):
+   # Combine the two string
+   combined = _____+" "+_____
+   # Return the string
+   
 # Call the function 
-
+print(CombineStr(Winnie,Li))
 ```
 
 `@solution`
 ```{python}
-# Create a new function named "Subtract"
-def Subtract(a, b):
-    # Print the result of a-b
-    print(a-b)
+# Create a new function named "CombineStr"
+def CombineStr(str1,str2):
+   # Combine the two string
+   combined = str1+" "+str2
+   # Return the string
+   return combined
   
 # Call the function 
-Subtract(10,5)
+print(CombineStr(Winnie,Li))
 ```
 
 `@sct`
 ```{python}
-test_output_contains("5", no_output_msg = "The output is inccorect. Make sure the difference between two arguments is `5`?",pattern = False)
-test_function_definition("Subtract", arg_names = True, arg_defaults = False)
-test_function("Subtract", not_called_msg = "You didn't call the following function: ()")
+test_output_contains(" Winnie Li", no_output_msg = "The output is inccorect. Make sure to return the correct string.",pattern = False)
+test_function_definition("CombineStr", arg_names = False, arg_defaults = False)
+test_function("CombineStr", not_called_msg = "You didn't call the following function: ()")
 success_msg("Great work!")
 ```
