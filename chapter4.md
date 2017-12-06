@@ -207,8 +207,8 @@ print(CombineStr("Winnie","Li"))
 
 `@sct`
 ```{python}
-test_output_contains("Winnie Li", no_output_msg = "The output is inccorect. Make sure to return the correct string.",pattern = False)
-test_function("CombineStr", not_called_msg = "You didn't call the following function: ()")
 test_function_definition("CombineStr", arg_names = False, arg_defaults = False)
+test_function("CombineStr", not_called_msg = "You didn't call the following function: ()")
+test_output_contains("Winnie Li", no_output_msg = "The output is inccorect. Make sure to return the correct string.",pattern = False)
 success_msg("Great work!")
 ```
