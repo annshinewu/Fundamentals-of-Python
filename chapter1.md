@@ -181,7 +181,7 @@ test_output_contains("This is an exercise to print strings.", pattern=False, no_
 test_output_contains(" ", pattern=False, no_output_msg= "You have not printed the second instruction correctly")
 test_output_contains(" is", pattern=False, no_output_msg= "You have not printed the third instruction correctly")
 test_output_contains("an exercise to print strings.", pattern=False, no_output_msg= "You have not printed the fourth instruction correctly")
-test_output_contains("This is an exercise to print strings.This is an exercise to print strings.This is an exercise to print strings.This is an exercise to print strings.This is an exercise to print strings.This is an exercise to print strings.This is an exercise to print strings. ", pattern=False, no_output_msg= "You have not printed the fifth instruction correctly")
+test_output_contains("This is an exercise to print strings.This is an exercise to print strings.This is an exercise to print strings.This is an exercise to print strings.This is an exercise to print strings.This is an exercise to print strings.This is an exercise to print strings.", pattern=False, no_output_msg= "You have not printed the fifth instruction correctly")
 test_output_contains("This is an exercise to print strings.YAY!", pattern=False, no_output_msg= "You have not printed the sixth instruction correctly")
 
 success_msg("Great work!")
