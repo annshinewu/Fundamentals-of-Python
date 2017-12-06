@@ -179,7 +179,7 @@ print (string2 + "YAY!") # 6. print a concatentated string by adding "YAY!"
 ```{python}
 test_output_contains("This is an exercise to print strings.", pattern=False, no_output_msg= "You have not printed the first instruction correctly")
 test_output_contains(" ", pattern=False, no_output_msg= "You have not printed the second instruction correctly")
-test_output_contains("is an exercise to print strings. ", pattern=False, no_output_msg= "You have not printed the third instruction correctly")
+test_output_contains(" is", pattern=False, no_output_msg= "You have not printed the third instruction correctly")
 test_output_contains("is an exercise to print strings. ", pattern=False, no_output_msg= "You have not printed the second instruction correctly")
 test_output_contains("n exercise to print strings. ", pattern=False, no_output_msg= "You have not printed the fourth instruction correctly")
 test_output_contains("This is an exercise to print strings. This is an exercise to print strings. This is an exercise to print strings. This is an exercise to print strings. This is an exercise to print strings. This is an exercise to print strings. This is an exercise to print strings. ", pattern=False, no_output_msg= "You have not printed the fifth instruction correctly")
