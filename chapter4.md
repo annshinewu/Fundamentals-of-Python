@@ -183,7 +183,7 @@ In the body of the functions we defined in the prvious exercises, we use print t
 `@sample_code`
 ```{python}
 # Create a new function named "CombineStr"
-def CombineStr(___,___):
+def ______(___,___):
     # Combine the two string
     combined = _____+" "+_____
     # Return the string
@@ -208,7 +208,7 @@ print(CombineStr("Winnie","Li"))
 `@sct`
 ```{python}
 test_output_contains("Winnie Li", no_output_msg = "The output is inccorect. Make sure to return the correct string.",pattern = False)
-test_function_definition("CombineStr", arg_names = False, arg_defaults = False)
 test_function("CombineStr", not_called_msg = "You didn't call the following function: ()")
+test_function_definition("CombineStr", arg_names = False, arg_defaults = False)
 success_msg("Great work!")
 ```
