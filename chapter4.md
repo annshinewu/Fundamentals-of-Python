@@ -262,12 +262,13 @@ key: c9dae6a9e4
 ```
 We've learn the basics of defining and calling functions and seen functions that print text or do simple arithmetic, but functions can do much more than that. For example, a function can call another function or itself, which is `recursive`. Look at the follow exmaple to better understand the idea.
 
-    def fun_one(num_one):
-        return num * 5
+    def fcn_one(x):
+        return x * 5
 
-    def fun_two(num_two):
-        num_two = num_two+2
-        return fun_one(num_two)
+    def fcn_two(y):
+    return fun_one(y) + 7
+
+This program will take in a argument, `y`, and call the function `fcn_one` and pass in `y`, then plus 7 to the result return from `fcn_one`
 
 `@instructions`
 - Create a function named `Increment`.
@@ -285,27 +286,36 @@ We've learn the basics of defining and calling functions and seen functions that
 
 `@sample_code`
 ```{python}
-# Create a new function named "CombineStr"
+# Create a new function named "Increment"
 def ______(___,___):
-    # Combine the two string
-    combined = _____+" "+_____
-    # Return the string
-    
+    # Add one to the number
+    ___ += 1
+    # Check if the number is eual to our goal
+    if (___ == ___):
+        return ___
+    else:
+        # Call the function, Increment, and pass the number in.
+        return ____
+  
 # Call the function 
-print(CombineStr("Winnie","Li"))
+print(Increment(0,10))
 ```
 
 `@solution`
 ```{python}
-# Create a new function named "CombineStr"
-def CombineStr(str1,str2):
-    # Combine the two string
-    combined = str1+" "+str2
-    # Return the string
-    return combined
+# Create a new function named "Increment"
+def Increment(num,goal):
+    # Add one to the number
+    num += 1
+    # Check if the number is eual to our goal
+    if (num == goal):
+        return num
+    else:
+        # Call the function, Increment, and pass the number in.
+        return Increment(num,goal)
   
 # Call the function 
-print(CombineStr("Winnie","Li"))
+print(Increment(0,10))
 ```
 
 `@sct`
