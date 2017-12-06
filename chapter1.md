@@ -36,7 +36,7 @@ Each of these comparator statements yields one of two values: True, False.
 
 Look at the unfinished statements.
 
-Finish them by adding True or Flase, depending on the comment in the line above, to the variables.
+Finish them by adding True or False, depending on the comment in the line above, to the variables.
 
 Note that characters are compared using ASCII numbers (A = 65 and Z = 90 in increasing order)
 
@@ -108,16 +108,16 @@ bool_eight = False
 
 `@sct`
 ```{python}
-test_student_typed('bool_one = False', pattern = False, not_typed_msg = "bool_one seems a bit off.")
-test_student_typed('bool_two = True', pattern = False, not_typed_msg = "Check bool_two again.")
-test_student_typed('bool_three = False', pattern = False, not_typed_msg = "Are you sure about bool_three?")
-test_student_typed('bool_four = True', pattern = False, not_typed_msg = "Look at bool_four one more time.")
-test_student_typed('bool_five = True', pattern = False, not_typed_msg = "bool_five seems a bit off")
-test_student_typed('bool_six = False', pattern = False, not_typed_msg = "Check bool_six again.")
-test_student_typed('bool_seven = True', pattern = False, not_typed_msg = "Are you sure about bool_seven?")
-test_student_typed('bool_eight = False', pattern = False, not_typed_msg = "Look at bool_eight one more time.")
+test_object('bool_one', eq_condition = "equal", do_eval=True, incorrect_msg = "bool_one seems a bit off.")
+test_object('bool_two', eq_condition = "equal", do_eval=True, incorrect_msg = "Check bool_two again.")
+test_object('bool_three', eq_condition = "equal", do_eval=True, incorrect_msg = "Are you sure about bool_three?")
+test_object('bool_four', eq_condition = "equal", do_eval=True, incorrect_msg = "Look at bool_four one more time.")
+test_object('bool_five', eq_condition = "equal", do_eval=True, incorrect_msg = "bool_five seems a bit off")
+test_object('bool_six', eq_condition = "equal", do_eval=True, incorrect_msg = "Check bool_six again.")
+test_object('bool_seven', eq_condition = "equal", do_eval=True, incorrect_msg = "Are you sure about bool_seven?")
+test_object('bool_eight', eq_condition = "equal", do_eval=True, incorrect_msg = "Look at bool_eight one more time.")
 
-success_msg = "Congradulations!"
+success_msg = "Congratulations!"
 ```
 
 
@@ -202,11 +202,12 @@ bool_five = False
 
 `@sct`
 ```{python}
-test_student_typed('bool_one = True', pattern = False, not_typed_msg = "bool_one seems a bit off.")
-test_student_typed('bool_two = True', pattern = False, not_typed_msg = "Check bool_two again.")
-test_student_typed('bool_three = False', pattern = False, not_typed_msg = "Are you sure about bool_three?")
-test_student_typed('bool_four = True', pattern = False, not_typed_msg = "Look at bool_four one more time.")
-test_student_typed('bool_five = False', pattern = False, not_typed_msg = "bool_five seems a bit off")
+test_object('bool_one', eq_condition = "equal", do_eval=True, incorrect_msg = "bool_one seems a bit off.")
+test_object('bool_two', eq_condition = "equal", do_eval=True, incorrect_msg = "Check bool_two again.")
+test_object('bool_three', eq_condition = "equal", do_eval=True, incorrect_msg = "Are you sure about bool_three?")
+test_object('bool_four', eq_condition = "equal", do_eval=True, incorrect_msg = "Look at bool_four one more time.")
+test_object('bool_five', eq_condition = "equal", do_eval=True, incorrect_msg = "bool_five seems a bit off")
+
 ```
 
 ---
@@ -221,7 +222,7 @@ skills: 2
 ```
 'If' is a conditional statement that executes the code wrapped inside if the expression is True.
 
-The syntax for If statemnts is:
+The syntax for If statements is:
 
     if (5 == 5):
         print('Hi')
@@ -253,7 +254,7 @@ Run the code, and see which output will be printed!
 Review the syntax 
 `@pre_exercise_code`
 ```{python}
-x = 'bananas'
+x = 'apples'
 
 ```
 
@@ -272,7 +273,8 @@ else:
 
 `@sct`
 ```{python}
-test_output_contains('I love bananas!', pattern = False, output_msg = 'Did you properly code the if expression?', state = None)
+test_output_contains('I love apples!', pattern = False, no_output_msg = 'Did you properly code the if expression?')
+success_msg = "Congratulations!"
 ```
 
 
@@ -340,6 +342,43 @@ elif(x == 'avocados'):
     print ('I love avocados!')
 else:
     print ('I love apples!')
+```
+
+`@sct`
+```{python}
+test_output_contains('I love avocados!', pattern = False, no_output_msg = 'Did you properly code the if expression?')
+success_msg = "Congratulations!"
+```
+
+---
+## <<<New Exercise>>>
+
+```yaml
+type: NormalExercise
+key: 5dd1342b15
+lang: python
+xp: 100
+skills: 2
+```
+
+
+`@instructions`
+
+`@hint`
+
+`@pre_exercise_code`
+```{python}
+
+```
+
+`@sample_code`
+```{python}
+
+```
+
+`@solution`
+```{python}
+
 ```
 
 `@sct`
