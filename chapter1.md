@@ -79,8 +79,12 @@ A string is a contingous set of characters represented in quotation marks. For e
 ```{python}
 # Declare and initialize string1
 string1 = "I am the first string"
+# Print string1
 print (string1)
+
+# Declare and initialize string2
 string2 = ___
+# Print string2
 print (___)
 ```
 
@@ -88,12 +92,11 @@ print (___)
 ```{python}
 # Declare and initialize string1
 string1 = "I am the first string"
-
 # Print string1
 print (string1)
+
 # Declare and initialize string2
 string2 = "I am the second string"
-
 # Print string2
 print (string2)
 ```
@@ -166,7 +169,7 @@ print (string1 + "apples!") # Prints concatenated string
 string2 = "This is an exercise to print strings. "
 print (string2)          # 1. Print the complete string
 print (string2[4])       # 2. Print the 5th character
-print (string2[4:5])     # 3. Print characters starting from the 5th to 7th
+print (string2[4:7])     # 3. Print characters starting from the 5th to 7th
 print (string2[8:])      # 4. Print all characters starting from the 9th character
 print (string2 * 7)      # 5. Print the string 7 times
 print (string2 + "YAY!") # 6. print a concatentated string by adding "YAY!"
