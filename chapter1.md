@@ -341,6 +341,7 @@ print ("b" in list3)
 test_output_contains("['I ', 'am ', 'a ', 'list ', 'of ', 'strings.', 'a', 'b', 'c', 'd']", pattern=False, no_output_msg= "You have not printed list3 correctly")
 test_output_contains("False")
 test_output_contains("True")
+success_msg("Great work!")
 ```
 
 ---
@@ -446,6 +447,7 @@ test_output_contains("[51, 203, 3, 4000, -10, 51, 51, 51, 51, -10, 203, -10]", p
 test_output_contains("[-10, -10, -10, 3, 51, 51, 51, 51, 51, 203, 203, 4000]", pattern=False, no_output_msg= "You have not printed list1 correctly")
 test_object("list1")
 
+success_msg("Great work!")
 ```
 
 ---
@@ -524,6 +526,8 @@ print (str(dict1))
 test_output_contains("B+", pattern=False, no_output_msg= "You have not printed the value for the key 'Biology' correctly")
 test_object("dict1")
 
+success_msg("Great work!")
+
 ```
 
 ---
@@ -600,6 +604,7 @@ test_student_typed("dict1.values", pattern = False)
 test_student_typed("dict1.items", pattern = False)
 
 test_object("dict1")
+success_msg("Great work!")
 
 ```
 
@@ -717,5 +722,6 @@ test_object("string1")
 test_object("string2")
 test_object("string3")
 test_student_typed("str(dict1)", pattern = False)
+success_msg("Great work!")
 
 ```
