@@ -261,11 +261,14 @@ xp: 100
 key: c9dae6a9e4
 ```
 We've learn the basics of defining and calling functions and seen functions that print text or do simple arithmetic, but functions can do much more than that. For example, a function can call another function or itself, which is `recursive`. Look at the follow exmaple to better understand the idea.
-`def fun_one(n):
-  return n * 5
 
-def fun_two(m):
-  return fun_one(m) + 7`
+`def fun_one(n):`
+
+`  return n * 5`
+
+`def fun_two(m):`
+
+` ``return fun_one(m) + 7`
 
 `@instructions`
 - Create a function named `Increment`.
