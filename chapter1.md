@@ -142,16 +142,16 @@ But other than printing the entire string, are there some ways you could print a
 string1 = "My favorite fruit is "
 print (string1)          # Prints complete string
 print (string1[0])       # Prints first character of the string
-print (string1[1:5])     # Prints characters starting from 2nd to 5th
-print (string1[7:])      # Prints string starting from 8th character
+print (string1[1:5])     # Prints characters from 2nd to 5th (inclusive)
+print (string1[7:])      # Prints string starting from 8th character (inclusive)
 print (string1 * 5)      # Prints string 5 times
 print (string1 + "apples!") # Prints concatenated string
 
 string2 = "This is an exercise to print strings."
 print (___) # 1. Print the complete string
 print (___) # 2. Print the 5th character
-print (___) # 3. Print characters starting from the 5th to 7th
-print (___) # 4. Print all characters starting from the 9th character
+print (___) # 3. Print characters starting from the 5th to 7th (inclusive)
+print (___) # 4. Print all characters starting from the 9th character (inclusive)
 print (___) # 5. Print the string 7 times
 print (___) # 6. print a concatentated string by adding "YAY!"
 ```
@@ -161,16 +161,16 @@ print (___) # 6. print a concatentated string by adding "YAY!"
 string1 = "My favorite fruit is "
 print (string1)          # Prints complete string
 print (string1[0])       # Prints first character of the string
-print (string1[1:5])     # Prints characters starting from 2nd to 5th
-print (string1[7:])      # Prints string starting from 8th character
+print (string1[1:5])     # Prints characters from 2nd to 5th (inclusive)
+print (string1[7:])      # Prints string starting from 8th character (inclusive)
 print (string1 * 5)      # Prints string 5 times
 print (string1 + "apples!") # Prints concatenated string
 
 string2 = "This is an exercise to print strings. "
 print (string2)          # 1. Print the complete string
 print (string2[4])       # 2. Print the 5th character
-print (string2[4:7])     # 3. Print characters starting from the 5th to 7th
-print (string2[8:])      # 4. Print all characters starting from the 9th character
+print (string2[4:7])     # 3. Print characters from the 5th to 7th (inclusive)
+print (string2[8:])      # 4. Print all characters starting from the 9th character (inclusive)
 print (string2 * 7)      # 5. Print the string 7 times
 print (string2 + "YAY!") # 6. print a concatentated string by adding "YAY!"
 ```
@@ -180,8 +180,7 @@ print (string2 + "YAY!") # 6. print a concatentated string by adding "YAY!"
 test_output_contains("This is an exercise to print strings.", pattern=False, no_output_msg= "You have not printed the first instruction correctly")
 test_output_contains(" ", pattern=False, no_output_msg= "You have not printed the second instruction correctly")
 test_output_contains(" is", pattern=False, no_output_msg= "You have not printed the third instruction correctly")
-test_output_contains("is an exercise to print strings. ", pattern=False, no_output_msg= "You have not printed the second instruction correctly")
-test_output_contains("n exercise to print strings. ", pattern=False, no_output_msg= "You have not printed the fourth instruction correctly")
+test_output_contains("an exercise to print strings. ", pattern=False, no_output_msg= "You have not printed the fourth instruction correctly")
 test_output_contains("This is an exercise to print strings. This is an exercise to print strings. This is an exercise to print strings. This is an exercise to print strings. This is an exercise to print strings. This is an exercise to print strings. This is an exercise to print strings. ", pattern=False, no_output_msg= "You have not printed the fifth instruction correctly")
 test_output_contains("This is an exercise to print strings. YAY!", pattern=False, no_output_msg= "You have not printed the sixth instruction correctly")
 
