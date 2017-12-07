@@ -320,8 +320,116 @@ print(Increment(0,10))
 
 `@sct`
 ```{python}
-test_output_contains("10", no_output_msg = "The output is inccorect. Make sure the final return value is euqal to our goal, `10`.",pattern = False)
+test_output_contains("10", no_output_msg = "The output is inccorect. Make sure the returned value is euqal to our goal, `10`.",pattern = False)
 test_function("Increment", not_called_msg = "You didn't call the following function: Increment()")
 test_function_definition("Increment", arg_names = False, arg_defaults = False)
+success_msg("Great work!")
+```
+
+---
+## Import Modules
+
+```yaml
+type: NormalExercise
+lang: python
+xp: 100
+key: c9dae6a9e4
+```
+In the previous exercises, we learn how to program `user-define function`, which is functions create by ourselves; However, there are many built-in `modules` that we can import. A module is a file that contains definitions, including variables and functions, that we can use.
+
+    import math
+    print(math.sqrt(25))
+
+This program will output `5`, which is the answer of sqare roots 25. Adding `math.` infront is very crucial, since python doesn't know what sqrt() means, and the module named math that includes a number of useful variables and functions, and sqrt() is one of those functions. In order to access the function math, we need to tell Python to import from the math module.
+
+`@instructions`
+- import the module `math`.
+- Print out the result of square roots 49
+
+`@hint`
+- Use math. infront of the function sqrt() and insert 49 between the parentheses, ().
+
+`@sample_code`
+```{python}
+# Import math module
+ 
+ 
+# Pring the result of square roots 49
+
+```
+
+`@solution`
+```{python}
+# Import math module
+import math
+
+# Pring the result of square roots 49
+print(math.sqrt(49))
+```
+
+`@sct`
+```{python}
+test_output_contains("7", no_output_msg = "The output is inccorect. Make sure the output is `7`.",pattern = False)
+test_import("math", same_as = True)
+test_function("math.sqrt",
+              incorrect_msg = "You didn't use `math.sqrt()` correctly.")
+success_msg("Great work!")
+```
+
+---
+## More Mathematical Functions
+
+```yaml
+type: NormalExercise
+lang: python
+xp: 100
+key: c9dae6a9e4
+```
+There are much more functions in `math` module other than `sqrt()`. For example: 
+
+    sqrt(x) # Return the square roots of x
+    fabs(x) # Return the absolute value of x
+    pow(x,y) # Return the answer of x^y (Note: x and y are double)
+    cos(x) # Return the cosine of x in radians
+    ... etc
+
+`@instructions`
+- import the module `math`.
+- Use functions is math module to calculate the answer for the following equation, (5^3)^(1/2)
+- print out the result
+
+`@hint`
+- Use sqrt() and pow()
+
+`@sample_code`
+```{python}
+# Import math module
+ 
+ 
+# Calculate (5^3)^(1/2) and store in `ans`
+ans = _____
+
+#Print out `ans`
+
+```
+
+`@solution`
+```{python}
+# Import math module
+import math
+ 
+# Calculate (5^3)^(1/2) and store in `ans`
+ans = math.sqrt(math.pow(5.0,3.0))
+
+#Print out `ans`
+print(ans)
+```
+
+`@sct`
+```{python}
+test_output_contains("7", no_output_msg = "The output is inccorect. Make sure the output is `7`.",pattern = False)
+test_import("math", same_as = True)
+test_function("math.sqrt",
+              incorrect_msg = "You didn't use `math.sqrt()` correctly.")
 success_msg("Great work!")
 ```
