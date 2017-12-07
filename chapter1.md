@@ -231,7 +231,7 @@ Since the expression in the if statement (5 == 5) yields True, the statement wra
 
 'Else' is a complement statement that executes the code inside if the if statement is False
 
-The syntax for If-Else statements is:
+An example for if-else statements would be:
 
     if(5!=5):
         print('Hi')
@@ -299,7 +299,7 @@ The statement in elif will execute if its expression yields True, or else it pas
 
 There can be infinite amount of elif statement, but in an if-elif-else statement, only one statement will be executed.
 
-Syntax of elif statements:
+An example of an elif statement would be:
 
     if(5==6):
         print('one')
@@ -351,11 +351,92 @@ success_msg = "Congratulations!"
 ```
 
 ---
-## <<<New Exercise>>>
+## While Loops
 
 ```yaml
 type: NormalExercise
 key: 5dd1342b15
+lang: python
+xp: 100
+skills: 2
+```
+In this exercise, you will be learning about 'While Loops'
+
+A while loop loops the statement wrapped inside as long as its condition is fulfilled, or yields the value True.
+
+This is the basic syntax for a while loop is:
+
+    while(condition):
+        statement(s)
+
+The basic flow of a while loop is:
+
+1. First, the while loop checks the condition
+
+2. If the condition is true, then it iterates the statements wrapped inside once.
+
+3. It checks for the condtion again: repeats step 2 if it is True, if False, the program exits the loop
+
+An example of a while loop would be:
+
+    x = 2
+    while(x < 4):
+        print (x)
+        x += 1
+
+In this code, x is initially declared as the integer 2.
+
+Then it goes in the while loop
+
+First iteration, it yields True since 2 < 4, thus the program prints x and increases x by 1
+
+It continues on for another iteration before the expression becomes 4 < 4, which is False, thus exiting the while loop.
+
+`@instructions`
+Variable x has already been declared for you.
+
+Create a while loop that has a condtion of x being greater than or equal to 2
+
+And inside the while loop, it prints the string "x" and decreases varaible x by 1.
+
+Run the program and see how many times is "x" printed.
+`@hint`
+Review the syntax of while loop and see where to put the condition and statements.
+
+`@pre_exercise_code`
+```{python}
+x = 10
+
+```
+
+`@sample_code`
+```{python}
+
+```
+
+`@solution`
+```{python}
+while ( x >= 2):
+    print("x")
+    x -= 1
+
+```
+
+`@sct`
+```{python}
+test_object('x', eq_condition = "equal", do_eval=True, incorrect_msg = "Is the condition set for while loop correct?")
+
+test_output_contains('x\nx\nx\nx\nx\nx\nx\nx\nx\n', pattern = False, no_output_msg = 'Is the output correct?')
+
+
+```
+
+---
+## For Loops
+
+```yaml
+type: NormalExercise
+key: 28273d4514
 lang: python
 xp: 100
 skills: 2
