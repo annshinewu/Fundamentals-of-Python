@@ -433,3 +433,84 @@ test_function("math.pow",
               incorrect_msg = "Did you use `math.pow()`?.")
 success_msg("Great work!")
 ```
+
+---
+## Lambda Function
+
+```yaml
+type: MultipleChoiceExercise
+lang: python
+xp: 50
+key: c9dae6a9e4
+```
+When we define a function we often give it a name; however, Python also supports creating `anonymous functions`, functions that define without a name, using a construct called `lambda`. Therefore, `anonymous functions` are also called `lambda functions`.
+
+    def fcn_one(x):
+        return x * 2
+    print(fcn_one(2))
+    
+    num = lambda x: x*2
+    print(num(2))
+
+In the program above, lambda x: x * 2 is the lambda function. x is the argument and x * 2 is the expression that gets evaluated and returned. This function has no name. It returns a function object which is assigned to the `identifier`, a name used to identify a variable, `num`. 
+
+`@instructions`
+Have a look at the choices. Select the choice that both the lambda function and the normal function, function defined with name, return the same value.
+
+Test it out it the shell to see the different output.
+- def num():  return ("1")
+	num = lambda x: 1
+- def num():  return (math.pow(x,2))
+	num = lambda x: x**2
+- def 
+  
+   
+
+`@hint`
+- To pass in arguments, you have to specify the paremeters in the parentheses, (). For example: def Multiply(a,b)
+- Adding one to the number simply use the arithemtic opertation, `+`.
+- To create an if-statement, use the keyword `if` and type the condition in the parentheses, ().
+- To return the value use `return` and follow by the variable that you want to return.
+- Calling the function itself is like how we call another function in the previous exercises. Use `return` and follow by the name of the function and a parenthese with the right argument.
+
+`@sample_code`
+```{python}
+# Create a new function named "Increment"
+def ______(___,___):
+    # Check if the number is eual to our goal
+    if (___ == ___):
+        return ___
+    else:
+        # Add one to the number
+        ___ += 1
+        # Call the function, Increment, and pass the number in.
+        return ____
+  
+# Call the function 
+print(Increment(0,10))
+```
+
+`@solution`
+```{python}
+# Create a new function named "Increment"
+def Increment(num,goal):
+    # Check if the number is eual to our goal
+    if (num == goal):
+        return num
+    else:
+        # Add one to the number
+        num += 1
+        # Call the function, Increment, and pass the number in.
+        return Increment(num,goal)
+  
+# Call the function 
+print(Increment(0,10))
+```
+
+`@sct`
+```{python}
+test_output_contains("10", no_output_msg = "The output is inccorect. Make sure the returned value is euqal to our goal, `10`.",pattern = False)
+test_function("Increment", not_called_msg = "You didn't call the following function: Increment()")
+test_function_definition("Increment", arg_names = False, arg_defaults = False)
+success_msg("Great work!")
+```
