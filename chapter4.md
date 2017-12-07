@@ -288,12 +288,12 @@ This program will take in a argument, `y`, and call the function `fcn_one` and p
 ```{python}
 # Create a new function named "Increment"
 def ______(___,___):
-    # Add one to the number
-    ___ += 1
     # Check if the number is eual to our goal
     if (___ == ___):
         return ___
     else:
+        # Add one to the number
+        ___ += 1
         # Call the function, Increment, and pass the number in.
         return ____
   
@@ -305,12 +305,12 @@ print(Increment(0,10))
 ```{python}
 # Create a new function named "Increment"
 def Increment(num,goal):
-    # Add one to the number
-    num += 1
     # Check if the number is eual to our goal
     if (num == goal):
         return num
     else:
+        # Add one to the number
+        num += 1
         # Call the function, Increment, and pass the number in.
         return Increment(num,goal)
   
@@ -320,8 +320,8 @@ print(Increment(0,10))
 
 `@sct`
 ```{python}
-test_output_contains("Winnie Li", no_output_msg = "The output is inccorect. Make sure to return the correct string.",pattern = False)
-test_function("CombineStr", not_called_msg = "You didn't call the following function: CombineStr()")
-test_function_definition("CombineStr", arg_names = False, arg_defaults = False)
+test_output_contains("10", no_output_msg = "The output is inccorect. Make sure the final return value is euqal to our goal, `10`.",pattern = False)
+test_function("Increment", not_called_msg = "You didn't call the following function: Increment()")
+test_function_definition("Increment", arg_names = False, arg_defaults = False)
 success_msg("Great work!")
 ```
