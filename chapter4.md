@@ -327,13 +327,13 @@ success_msg("Great work!")
 ```
 
 ---
-## Import Modules
+## Math Module
 
 ```yaml
 type: NormalExercise
 lang: python
 xp: 100
-key: c9dae6a9e4
+key: 085e26ba73
 ```
 In the previous exercises, we learn how to program `user-define function`, which is functions create by ourselves; However, there are many built-in `modules` that we can import. A module is a file that contains definitions, including variables and functions, that we can use.
 
@@ -383,15 +383,15 @@ success_msg("Great work!")
 type: NormalExercise
 lang: python
 xp: 100
-key: c9dae6a9e4
+key: 7723b9f10e
 ```
 There are much more functions in `math` module other than `sqrt()`. For example: 
 
-    sqrt(x) # Return the square roots of x
-    fabs(x) # Return the absolute value of x
-    pow(x,y) # Return the answer of x^y (Note: x and y are double)
-    cos(x) # Return the cosine of x in radians
-    ... etc
+    1. sqrt(x) # Return the square roots of x
+    2. fabs(x) # Return the absolute value of x
+    3. pow(x,y) # Return the answer of x^y 
+        (Note: x and y are double)
+    4. cos(x) # Return the cosine of x in radians
 
 `@instructions`
 - import the module `math`.
@@ -427,9 +427,9 @@ print(ans)
 
 `@sct`
 ```{python}
-test_output_contains("7", no_output_msg = "The output is inccorect. Make sure the output is `7`.",pattern = False)
+test_output_contains("11.180339887498949", no_output_msg = "The output is inccorect. Make sure the output is the answer of `(5^3)^(1/2)`.",pattern = False)
 test_import("math", same_as = True)
-test_function("math.sqrt",
-              incorrect_msg = "You didn't use `math.sqrt()` correctly.")
+test_function("math.pow",
+              incorrect_msg = "Did you use `math.pow()`?.")
 success_msg("Great work!")
 ```
