@@ -441,7 +441,7 @@ success_msg("Great work!")
 type: MultipleChoiceExercise
 lang: python
 xp: 50
-key: c9dae6a9e4
+key: 290cb7555f
 ```
 When we define a function we often give it a name; however, Python also supports creating `anonymous functions`, functions that define without a name, using a construct called `lambda`. Therefore, `anonymous functions` are also called `lambda functions`.
 
@@ -457,61 +457,29 @@ In the program above, lambda x: x * 2 is the lambda function. x is the argument 
 Have a look at the choices. Select the lambda function that will return the same value as the following functions.
 
     def num(x):
-	return (math.pow(x,2))
+	    return (math.pow(x,2))
 	
  Test it out it the shell to see the different output.
  
+
 `@instructions`
 - num = def x: math.pow(x,2)
-- lambda num: math.pow(x,2)
 - num = lambda x: x**2
 - def lambda(x):  return (math.pow(x,2))
+- num = lambda x: math.pow(x,2)
 
 `@hint`
-- To pass in arguments, you have to specify the paremeters in the parentheses, (). For example: def Multiply(a,b)
-- Adding one to the number simply use the arithemtic opertation, `+`.
-- To create an if-statement, use the keyword `if` and type the condition in the parentheses, ().
-- To return the value use `return` and follow by the variable that you want to return.
-- Calling the function itself is like how we call another function in the previous exercises. Use `return` and follow by the name of the function and a parenthese with the right argument.
+- Remeber the return type of pow() is always double
+- lambda function us the keyword `lambda` to define
 
-`@sample_code`
+`@pre_exercise_code`
 ```{python}
-# Create a new function named "Increment"
-def ______(___,___):
-    # Check if the number is eual to our goal
-    if (___ == ___):
-        return ___
-    else:
-        # Add one to the number
-        ___ += 1
-        # Call the function, Increment, and pass the number in.
-        return ____
-  
-# Call the function 
-print(Increment(0,10))
-```
-
-`@solution`
-```{python}
-# Create a new function named "Increment"
-def Increment(num,goal):
-    # Check if the number is eual to our goal
-    if (num == goal):
-        return num
-    else:
-        # Add one to the number
-        num += 1
-        # Call the function, Increment, and pass the number in.
-        return Increment(num,goal)
-  
-# Call the function 
-print(Increment(0,10))
+import math
 ```
 
 `@sct`
 ```{python}
-test_output_contains("10", no_output_msg = "The output is inccorect. Make sure the returned value is euqal to our goal, `10`.",pattern = False)
-test_function("Increment", not_called_msg = "You didn't call the following function: Increment()")
-test_function_definition("Increment", arg_names = False, arg_defaults = False)
-success_msg("Great work!")
+msg_bad = "That is incorrect! Try it on the shell to check"
+msg_success = "Correct!"
+test_mc(4, [msg_bad, msg_bad, msg_bad, msg_success])
 ```
