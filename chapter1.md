@@ -441,15 +441,28 @@ lang: python
 xp: 100
 skills: 2
 ```
+An alternatwive for using a while loop would be a For Loop.
 
+The syntax of a for loop is:
+
+for x in range(10):
+
+The for loop above iterates starting from x = 0 all the way till x = 10, meaning that it has iterated for 10 times.
 
 `@instructions`
+Create a for loop that iterates variable x for 15 times, 
 
+each time aggregating x's value by timing 2
+
+and finally, print out x's final value
 `@hint`
+Recall the example for for loop with the range(number)
+
+Remember, the instruction says to print out the FINAL value of x, not in each iteration
 
 `@pre_exercise_code`
 ```{python}
-
+x = 1
 ```
 
 `@sample_code`
@@ -459,10 +472,13 @@ skills: 2
 
 `@solution`
 ```{python}
-
+for x in range(15):
+    x *= 2
+print (x)
 ```
 
 `@sct`
 ```{python}
+test_object('x', eq_condition = "equal", do_eval=True, incorrect_msg = "Check your for loop condition and increasing statement again.")
 
 ```
