@@ -454,14 +454,16 @@ When we define a function we often give it a name; however, Python also supports
 
 In the program above, lambda x: x * 2 is the lambda function. x is the argument and x * 2 is the expression that gets evaluated and returned. This function has no name. It returns a function object which is assigned to the `identifier`, a name used to identify a variable, `num`. 
 
+Have a look at the choices. Select the lambda function that will return the same value as the following functions.
+    def num():
+	return (math.pow(x,2))
+        
 `@instructions`
-Have a look at the choices. Select the choice that both the lambda function and the normal function, function defined with name, return the same value.
-
 Test it out it the shell to see the different output.
 - def num():  return ("1")
 	num = lambda x: 1
 - def num():  return (math.pow(x,2))
-	num = lambda x: x**2
+	num = lambda x: 
 - def 
   
    
