@@ -567,10 +567,12 @@ test_import("random", not_imported_msg = "Did you import random?", same_as = Tru
 test_function_definition("getTime", arg_names = False, arg_defaults = False)
 test_function_definition("fallingDistance", arg_names = False, arg_defaults = False)
 test_function_definition("printDistance", arg_names = False, arg_defaults = False)
-#test_function("random.randint", not_called_msg = "You didn't call the following function: random.randint()", incorrect_msg = "Did you call random.randint() with correct arguments?")
+test_function("random.randint", not_called_msg = "You didn't call the following function: random.randint()", incorrect_msg = "Did you call random.randint() with correct arguments?")
 #test_function("str",not_called_msg = "You didn't call the following function: str()")
 test_function("getTime", not_called_msg = "You didn't call the following function: getTime()")
 test_function("fallingDistance", not_called_msg = "You didn't call the following function: fallingDistance()")
 test_function("printDistance", not_called_msg = "You didn't call the following function: printDistance()")
 success_msg("Great work!")
 ```
+
+
