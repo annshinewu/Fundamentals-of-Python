@@ -496,7 +496,7 @@ In this exercise, we will be utilizing all the technques we learn in the chapter
 
 The variables in the formula are as follows: d is the distance in meters. g is 9.8, and t is the amount of time, in seconds, that the object has been falling.
 
-Also, we will importing the module `random` in this program and use the function `randint()`.
+Also, we will importing the module `random` in this program and use the function `randint()` that help us generate random numbers.
 For expample,  `random.randint(5,10)` will generate an integer between 5 and 10
 
 `@instructions`
@@ -549,7 +549,7 @@ def fallingDistance(t):
 
 # Define the funcion printDistance()
 def printDistance(distance):
-    return "Distance: "+str(distance)+"meters"
+    return "Distance: "+str(distance)+" meters"
 
 #Call the function getTime()
 t = getTime()
@@ -564,8 +564,8 @@ printDistance(d)
 `@sct`
 ```{python}
 test_import("random", not_imported_msg = "Did you import random?", same_as = True)
-test_function("randint", incorrect_msg = "Did you use `random.randint()`?")
-test_student_typed("math.randint(1,50)", pattern=True, not_typed_msg="Did you use `random.randint()` with correct paremeter?)
+test_function("random.randint", incorrect_msg = "Did you use `random.randint()`?")
+#test_student_typed("random.randint(1,50)", pattern=True, not_typed_msg="Did you use `random.randint()` with correct paremeter?")
 test_function_definition("getTime", arg_names = False, arg_defaults = False)
 test_function_definition("fallingDistance", arg_names = False, arg_defaults = False)
 test_function_definition("printDistance", arg_names = False, arg_defaults = False)
