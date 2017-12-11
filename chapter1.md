@@ -148,12 +148,12 @@ print (string1 * 5)      # Prints string 5 times
 print (string1 + "apples!") # Prints concatenated string
 
 string2 = "This is an exercise to print strings."
-print (___) # 1. Print the complete string
-print (___) # 2. Print the 5th character
-print (___) # 3. Print characters starting from the 5th to 7th (inclusive)
-print (___) # 4. Print all characters starting from the 9th character (inclusive)
-print (___) # 5. Print the string 7 times
-print (___) # 6. Print a concatentated string by adding "YAY!"
+print ("1."+ ___) # 1. Print the complete string
+print ("2."+ ___) # 2. Print the 5th character
+print ("3."+ ___) # 3. Print characters starting from the 5th to 7th (inclusive)
+print ("4."+ ___) # 4. Print all characters starting from the 9th character (inclusive)
+print ("5."+ ___) # 5. Print the string 7 times
+print ("6."+ ___) # 6. Print a concatentated string by adding "YAY!"
 ```
 
 `@solution`
@@ -167,22 +167,22 @@ print (string1 * 5)      # Prints string 5 times
 print (string1 + "apples!") # Prints concatenated string
 
 string2 = "This is an exercise to print strings."
-print (string2)          # 1. Print the complete string
-print (string2[4])       # 2. Print the 5th character
-print (string2[4:7])     # 3. Print characters from the 5th to 7th (inclusive)
-print (string2[8:])      # 4. Print all characters starting from the 9th character (inclusive)
-print (string2 * 7)      # 5. Print the string 7 times
-print (string2 + "YAY!") # 6. Print a concatentated string by adding "YAY!"
+print ("1."+ string2)          # 1. Print the complete string
+print ("2."+ string2[4])       # 2. Print the 5th character
+print ("3."+ string2[4:7])     # 3. Print characters from the 5th to 7th (inclusive)
+print ("4."+ string2[8:])      # 4. Print all characters starting from the 9th character (inclusive)
+print ("5."+ string2 * 7)      # 5. Print the string 7 times
+print ("6."+ string2 + "YAY!") # 6. Print a concatentated string by adding "YAY!"
 ```
 
 `@sct`
 ```{python}
-test_output_contains("This is an exercise to print strings.", pattern=False, no_output_msg= "You have not printed the first instruction correctly")
-test_output_contains(" ", pattern=False, no_output_msg= "You have not printed the second instruction correctly")
-test_output_contains(" is", pattern=False, no_output_msg= "You have not printed the third instruction correctly")
-test_output_contains("an exercise to print strings.", pattern=False, no_output_msg= "You have not printed the fourth instruction correctly")
-test_output_contains("This is an exercise to print strings.This is an exercise to print strings.This is an exercise to print strings.This is an exercise to print strings.This is an exercise to print strings.This is an exercise to print strings.This is an exercise to print strings.", pattern=False, no_output_msg= "You have not printed the fifth instruction correctly")
-test_output_contains("This is an exercise to print strings.YAY!", pattern=False, no_output_msg= "You have not printed the sixth instruction correctly")
+test_output_contains("1.This is an exercise to print strings.", pattern=False, no_output_msg= "You have not printed the first instruction correctly")
+test_output_contains("2. ", pattern=False, no_output_msg= "You have not printed the second instruction correctly")
+test_output_contains("3. is", pattern=False, no_output_msg= "You have not printed the third instruction correctly")
+test_output_contains("4.an exercise to print strings.", pattern=False, no_output_msg= "You have not printed the fourth instruction correctly")
+test_output_contains("5.This is an exercise to print strings.This is an exercise to print strings.This is an exercise to print strings.This is an exercise to print strings.This is an exercise to print strings.This is an exercise to print strings.This is an exercise to print strings.", pattern=False, no_output_msg= "You have not printed the fifth instruction correctly")
+test_output_contains("6.This is an exercise to print strings.YAY!", pattern=False, no_output_msg= "You have not printed the sixth instruction correctly")
 
 success_msg("Great work!")
 ```
@@ -226,54 +226,54 @@ What is a list?
 list1 = [0,1,2,3,4,5,6,"Seven", "Eight", "Nine", "Ten"]
 # In order to access an element within the list, you will call list_name[index_of_element]
 firstElement = list1[0]
-print (firstElement) # It will print "0"
+print ("1.", firstElement) # It will print "0"
 # Accesses the 4th element to the 5th element
 subsetElement = list1[3:5]
-print (subsetElement) # It will print "[3, 4]"
+print ("2.", subsetElement) # It will print "[3, 4]"
 print ("Original value at index 7: ")
-print (list1[7]) # It will print 
+print ("3.", list1[7]) # It will print 
 # Updates list1[7] which originally was "Seven" to 7
 list1[7] = 7
 print ("Updated value at index 7: ")
-print (list1[7]) # It will print 
-print (list1) # Prints the entire list
+print ("4.", list1[7]) # It will print 
+print ("5.", list1) # Prints the entire list
 # Deletes the first element (with index 0)
 del list1[0]
 # Notice, that 0 has been deleted so all elements after it has been shifted forward one index
-print (list1)
+print ("6.", list1)
 # Slicing also works for lists! This will print all the elements starting from index 3 (aka the 4th element) to index 7 (aka 8th element)
-print (list1[3:8])
+print ("7.", list1[3:8])
 
 # Now it is your turn to practice list operations
 list2 = [___ , ___ , ___ , ___]
-print (___)
-print (list2[___])
+print ("1.", ___)
+print ("2.", list2[___])
 list2[___] = ___
-print (list2[___])
+print ("3.", list2[___])
 del list2[___]
-print (___)
-print (___)
+print ("4.", ___)
+print ("5.", ___)
 ```
 
 `@solution`
 ```{python}
 list2 = ["Physics", "Python", "Writing", "Calculus"]
-print (list2)
-print (list2[2])
+print ("1.", list2)
+print ("2.",list2[2])
 list2[2] = "Chemistry"
-print (list2[2])
+print ("3.",list2[2])
 del list2[0]
-print (list2)
-print (list2[1:3])
+print ("4.", list2)
+print ("5.", list2[1:3])
 ```
 
 `@sct`
 ```{python}
-test_output_contains("['Physics', 'Python', 'Writing', 'Calculus']", pattern=False, no_output_msg= "You have not printed list2 correctly")
-test_output_contains("Writing", pattern=False, no_output_msg= "You have not printed the 3rd element correctly")
-test_output_contains("Chemistry", pattern=False, no_output_msg= "You have not printed the updated 3rd element correctly")
-test_output_contains("['Python', 'Chemistry', 'Calculus']", pattern=False, no_output_msg= "You have not printed the updated list2 correctly")
-test_output_contains("['Chemistry', 'Calculus']", pattern=False, no_output_msg= "You have not printed sliced list2 correctly")
+test_output_contains("1.['Physics', 'Python', 'Writing', 'Calculus']", no_output_msg= "You have not printed list2 correctly")
+test_output_contains("2. Writing",no_output_msg= "You have not printed the 3rd element correctly")
+test_output_contains("3. Chemistry",no_output_msg= "You have not printed the updated 3rd element correctly")
+test_output_contains("4.['Python', 'Chemistry', 'Calculus']", no_output_msg= "You have not printed the updated list2 correctly")
+test_output_contains("5.['Chemistry', 'Calculus']", no_output_msg= "You have not printed sliced list2 correctly")
 
 success_msg("Great work!")
 ```
@@ -314,18 +314,18 @@ practice1 = [1,2,3,4,5]
 practice2 = [6,7,8,9,10]
 # This concatentates practice1 and practice2 to practice3; practice3 will become [1,2,3,4,5,6,7,8,9,10]
 practice3 = practice1 + practice2
-print (practice3)
+print ("1.", practice3)
 # This checks whether 3 is in practice2
-print (3 in practice2)
+print ("2.", 3 in practice2)
 # This checks whether 3 is in practice3
-print (3 in practice3)
+print ("3.", 3 in practice3)
 
 list1 = [___,___, ___,___, ___,___]
 list2 = [___,___,___,___]
 list3 = ___ + ___
-print (___)
-print (___ in ___)
-print (___ in ___)
+print ("1.", ___)
+print ("2.", ___ in ___)
+print ("3.", ___ in ___)
 ```
 
 `@solution`
@@ -333,16 +333,16 @@ print (___ in ___)
 list1 =["I ", "am ", "a ", "list ", "of ", "strings."]
 list2 = ["a", "b", "c", "d"]
 list3 = list1 + list2
-print (list3)
-print ("b" in list1)
-print ("b" in list3)
+print ("1.", list3)
+print ("2.", "b" in list1)
+print ("3.", "b" in list3)
 ```
 
 `@sct`
 ```{python}
-test_output_contains("['I ', 'am ', 'a ', 'list ', 'of ', 'strings.', 'a', 'b', 'c', 'd']", pattern=False, no_output_msg= "You have not printed list3 correctly")
-test_output_contains("False")
-test_output_contains("True")
+test_output_contains("1.['I ', 'am ', 'a ', 'list ', 'of ', 'strings.', 'a', 'b', 'c', 'd']", pattern=False, no_output_msg= "You have not printed list3 correctly")
+test_output_contains("2. False")
+test_output_contains("3. True")
 success_msg("Great work!")
 ```
 
