@@ -340,7 +340,7 @@ print ("3.", "b" in list3)
 
 `@sct`
 ```{python}
-test_output_contains("1.['I ', 'am ', 'a ', 'list ', 'of ', 'strings.', 'a', 'b', 'c', 'd']", pattern=False, no_output_msg= "You have not printed list3 correctly")
+test_output_contains("1. ['I ', 'am ', 'a ', 'list ', 'of ', 'strings.', 'a', 'b', 'c', 'd']", pattern=False, no_output_msg= "You have not printed list3 correctly")
 test_output_contains("2. False")
 test_output_contains("3. True")
 success_msg("Great work!")
@@ -391,62 +391,62 @@ Lists have some built-in functions that can be used. These are a few commonly us
 ```{python}
 practice1 = [12,400,723,4100,-100];
 # Prints the length of `practice1`
-print (len(practice1))
+print ("1.", len(practice1))
 # Prints the maximum of `practice1`
-print (max(practice1))
+print ("2.", max(practice1))
 # Prints the minimum of `practice1`
-print (min(practice1))
+print ("3.", min(practice1))
 # Appends [51,51,51,51,-10,203,-10] to practice1
 practice1.extend([12,401,12,723,-10,203,-10])
 # Count the number of 723s in practice1
-print (practice1.count(723))
+print ("4.", practice1.count(723))
 # Inserts 100 at the 2nd index
 practice1.insert(2,100)
-print (practice1)
+print ("5.", practice1)
 # Sorts list1
 practice1.sort()
-print (practice1)
+print ("6.", practice1)
 
 
 list1 = [___,___,___,___,___];
-print (___(___))
+print ("1.", ___(___))
 del list1[___]
-print (___(___))
-print (___(___))
-print (___(___))
+print ("2.", ___(___))
+print ("3.", ___(___))
+print ("4.", ___(___))
 list1.___([___,___,___,___,___,___,___])
-print (list1.___(___))
+print ("5.", list1.___(___))
 list1.___(___,___)
-print (___)
+print ("6.", ___)
 list1.___()
-print (___)
+print ("7.", ___)
 ```
 
 `@solution`
 ```{python}
 list1 = [51,203,73,4000,-10];
-print (len(list1))
+print ("1.", len(list1))
 del list1[2]
-print (len(list1))
-print (max(list1))
-print (min(list1))
+print ("2.", len(list1))
+print ("3.", max(list1))
+print ("4.", min(list1))
 list1.extend([51,51,51,51,-10,203,-10])
-print(list1.count(51))
+print("5.", list1.count(51))
 list1.insert(2,3)
-print (list1)
+print ("6.", list1)
 list1.sort()
-print (list1)
+print ("7.", list1)
 ```
 
 `@sct`
 ```{python}
-test_output_contains("5", pattern=False, no_output_msg= "You have not printed the length of list1 correctly")
-test_output_contains("4", pattern=False, no_output_msg= "You have not printed the length of list1 correctly")
-test_output_contains("4000", pattern=False, no_output_msg= "You have not printed the maximum of list1 correctly")
-test_output_contains("-10", pattern=False, no_output_msg= "You have not printed the minimum of list1 correctly")
-test_output_contains("5", pattern=False, no_output_msg= "You have not printed the number of occurences for 51 correctly")
-test_output_contains("[51, 203, 3, 4000, -10, 51, 51, 51, 51, -10, 203, -10]", pattern=False, no_output_msg= "You have not printed list1 correctly")
-test_output_contains("[-10, -10, -10, 3, 51, 51, 51, 51, 51, 203, 203, 4000]", pattern=False, no_output_msg= "You have not printed list1 correctly")
+test_output_contains("1. 5", pattern=False, no_output_msg= "You have not printed the length of list1 correctly")
+test_output_contains("2. 4", pattern=False, no_output_msg= "You have not printed the length of list1 correctly")
+test_output_contains("3. 4000", pattern=False, no_output_msg= "You have not printed the maximum of list1 correctly")
+test_output_contains("4. -10", pattern=False, no_output_msg= "You have not printed the minimum of list1 correctly")
+test_output_contains("5. 5", pattern=False, no_output_msg= "You have not printed the number of occurences for 51 correctly")
+test_output_contains("6. [51, 203, 3, 4000, -10, 51, 51, 51, 51, -10, 203, -10]", pattern=False, no_output_msg= "You have not printed list1 correctly")
+test_output_contains("7. [-10, -10, -10, 3, 51, 51, 51, 51, 51, 203, 203, 4000]", pattern=False, no_output_msg= "You have not printed list1 correctly")
 test_object("list1")
 
 success_msg("Great work!")
@@ -472,12 +472,10 @@ What is a dictionary in Python?
 Following the sample code provided, work on the exercise below:
 - Declare and initialize a dictionary called `dict1` as {'Physics': 'A+', 'Biology': 'B+', 'Chemistry': 'A-', 'Python': 'A'}
 - This dictionary uses various classes as keys and the grade within that class as the value
-- Print `dict1`
 - Print out the value for the key "Biology"
 - Update the grade for "Chemistry" to B-
 - Add a new class called "Calculus" and set its value to "D+"
 - Delete the entry with a key of "Python"
-- Print `dict1`
 
 `@hint`
 
@@ -492,35 +490,31 @@ Following the sample code provided, work on the exercise below:
 # The keys are the various iPhones, while the value represents their individual price. 
 practice1 = {'iPhone5': 7000, 'iPhone4': 5000,'iPhone6':100000,'iPhone7': 200000, 'iPhone8': 400000}
 # str(dict_name) converts a dictionary to a string representation, then the print function will print the string representation
-print (str(practice1))
+print ("1.", str(practice1))
 # Access and print the value with the key 'iPhone7'
-print(practice1['iPhone7'])
+print("2.", practice1['iPhone7'])
 # Updates the price of an iPhone4 to 0
 practice1['iPhone4'] = 0
 # Adds a new entry within the dictionary
 practice1['iPhoneX'] = 1050000
 # Deletes the entry with the key of 'iPhone5'
 del practice1['iPhone5']
-print (str(practice1))
+print ("3.", str(practice1))
 
 dict1 = {'___': '___', '___': '___', '___': '___', '___': '___'};
-print (___(___))
 print (dict1['___'])
 dict1['___'] = '___'
 dict1['___'] = '___'
 del dict1['___'];
-print (___(___))
 ```
 
 `@solution`
 ```{python}
 dict1 = {'Physics': 'A+', 'Biology': 'B+', 'Chemistry': 'A-', 'Python': 'A'};
-print (str(dict1))
 print (dict1['Biology'])
 dict1['Chemistry'] = 'B-'
 dict1['Calculus'] = 'D+'
 del dict1['Python'];
-print (str(dict1))
 ```
 
 `@sct`
@@ -580,27 +574,27 @@ print ("Elements:")
 print (practice1.items())
 
 dict1 = {'___': '___', '___': '___', '___': '___', '___': '___'};
-print (___(___))
-print (___.___())
-print (___.___())
-print (___.___())
+print ("1.", ___(___))
+print ("2.", ___.___())
+print ("3.", ___.___())
+print ("4.", ___.___())
 ```
 
 `@solution`
 ```{python}
 dict1 = {'Physics': 'A+', 'Biology': 'B+', 'Chemistry': 'A-', 'Python': 'A'};
-print (len(dict1))
-print (dict1.keys())
-print (dict1.values())
-print (dict1.items())
+print ("1.", len(dict1))
+print ("2.", dict1.keys())
+print ("3.", dict1.values())
+print ("4.", dict1.items())
 ```
 
 `@sct`
 ```{python}
-test_output_contains("4", pattern=False, no_output_msg= "You have not printed the length for the dictionary correctly")
-test_output_contains("dict_keys([", pattern=False, no_output_msg= "You have not printed the keys for dict1 correctly")
-test_output_contains("dict_values([", pattern=False, no_output_msg= "You have not printed the values for dict1 correctly")
-test_output_contains("dict_items([", pattern=False, no_output_msg= "You have not printed the items for dict1 correctly")
+test_output_contains("1. 4", pattern=False, no_output_msg= "You have not printed the length for the dictionary correctly")
+test_output_contains("2. dict_keys([", pattern=False, no_output_msg= "You have not printed the keys for dict1 correctly")
+test_output_contains("3. dict_values([", pattern=False, no_output_msg= "You have not printed the values for dict1 correctly")
+test_output_contains("4. dict_items([", pattern=False, no_output_msg= "You have not printed the items for dict1 correctly")
 test_student_typed("dict1.keys", pattern = False)
 test_student_typed("dict1.values", pattern = False)
 test_student_typed("dict1.items", pattern = False)
@@ -658,25 +652,25 @@ After learning how to use strings, lists, and dictionaries in this chapter, lets
 string1 = "___"
 string2 = "___"
 string3 = ___ + ___
-print (___ * ___)
-print (string3[___])
-print (string3[___ : ___])
+print ("1.", ___ * ___)
+print ("2.", string3[___])
+print ("3.", string3[___ : ___])
 list1 = [___,___,___,___,___]
 list2 = [___,___,___,___,___]
-print (___(list2))
-print (___(list2))
-print (list2.___(93))
+print ("4.", ___(list2))
+print ("5.", ___(list2))
+print ("6.", list2.___(93))
 list1.___(list2)
 del list2[___]
 list2.___()
-print (list1)
-print (list2)
+print ("7.", list1)
+print ("8.", list2)
 dict1 = {___: ___, ___: ___, ___: ___,___: ___,___: ___}
-print (___(dict1))
+print ("9.", ___(dict1))
 dict1[___] = ___
-print (___(dict1))
+print ("10.", ___(dict1))
 del dict1[___]
-print (___(dict1))
+print ("11.", ___(dict1))
 ```
 
 `@solution`
@@ -684,39 +678,39 @@ print (___(dict1))
 string1 = "Python"
 string2 = " and Game Programming"
 string3 = string1 + string2
-print (string3 * 5)
-print (string3[0])
-print (string3[2:8])
+print ("1.", string3 * 5)
+print ("2.", string3[0])
+print ("3.", string3[2:8])
 list1 = ['Python','Ethics','Economics','PE','Robotics']
 list2 = [88,93,70,93,100]
-print (max(list2))
-print (min(list2))
-print (list2.count(93))
+print ("4.", max(list2))
+print ("5.", min(list2))
+print ("6.", list2.count(93))
 list1.extend(list2)
 del list2[0]
 list2.sort()
-print (list1)
-print (list2)
+print ("7.", list1)
+print ("8.", list2)
 dict1 = {'Assignment1': 88, 'Assignment2': 93, 'Assignment3': 70, 'Assignment4': 93, 'Assignment5': 100}
-print (len(dict1))
+print ("9.", len(dict1))
 dict1['Assignment6'] = 90
-print (len(dict1))
+print ("10.", len(dict1))
 del dict1['Assignment3']
-print (str(dict1))
+print ("11.", str(dict1))
 ```
 
 `@sct`
 ```{python}
-test_output_contains("Python and Game ProgrammingPython and Game ProgrammingPython and Game ProgrammingPython and Game ProgrammingPython and Game Programming", pattern=False, no_output_msg= "You have not printed string3 five times correctly")
-test_output_contains("P", pattern=False, no_output_msg= "You have not printed the first character of string3 correctly")
-test_output_contains("thon a", pattern=False, no_output_msg= "You have not printed 3rd to 8th characters of string3 correctly")
-test_output_contains("100", pattern=False, no_output_msg= "You have not printed the maximum for list2 correctly")
-test_output_contains("70", pattern=False, no_output_msg= "You have not printed the minimum for list2 correctly")
-test_output_contains("2", pattern=False, no_output_msg= "You have not printed the number of times 93 appears in list2 correctly")
-test_output_contains("['Python', 'Ethics', 'Economics', 'PE', 'Robotics', 88, 93, 70, 93, 100]", pattern=False, no_output_msg= "You have not printed list1 correctly")
-test_output_contains("[70, 93, 93, 100]", pattern=False, no_output_msg= "You have not printed list2 correctly")
-test_output_contains("5", pattern=False, no_output_msg= "You have not printed the length of dict1 correctly")
-test_output_contains("6", pattern=False, no_output_msg= "You have not printed the updated length of dict1 correctly")
+test_output_contains("1. Python and Game ProgrammingPython and Game ProgrammingPython and Game ProgrammingPython and Game ProgrammingPython and Game Programming", pattern=False, no_output_msg= "You have not printed string3 five times correctly")
+test_output_contains("2. P", pattern=False, no_output_msg= "You have not printed the first character of string3 correctly")
+test_output_contains("3. thon a", pattern=False, no_output_msg= "You have not printed 3rd to 8th characters of string3 correctly")
+test_output_contains("4. 100", pattern=False, no_output_msg= "You have not printed the maximum for list2 correctly")
+test_output_contains("5. 70", pattern=False, no_output_msg= "You have not printed the minimum for list2 correctly")
+test_output_contains("6. 2", pattern=False, no_output_msg= "You have not printed the number of times 93 appears in list2 correctly")
+test_output_contains("7. ['Python', 'Ethics', 'Economics', 'PE', 'Robotics', 88, 93, 70, 93, 100]", pattern=False, no_output_msg= "You have not printed list1 correctly")
+test_output_contains("8. [70, 93, 93, 100]", pattern=False, no_output_msg= "You have not printed list2 correctly")
+test_output_contains("9. 5", pattern=False, no_output_msg= "You have not printed the length of dict1 correctly")
+test_output_contains("10. 6", pattern=False, no_output_msg= "You have not printed the updated length of dict1 correctly")
 test_object("dict1")
 test_object("list1")
 test_object("list2")
