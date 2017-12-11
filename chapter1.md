@@ -482,3 +482,87 @@ print (x)
 test_object('x', eq_condition = "equal", do_eval=True, incorrect_msg = "Check your for loop condition and increasing statement again.")
 
 ```
+
+---
+## Nested Loops
+
+```yaml
+type: NormalExercise
+key: 2260e70a56
+lang: python
+xp: 100
+skills: 2
+```
+In this exercise, you will be learning how loops can be within loops, and its usage.
+
+
+
+`@instructions`
+
+
+`@hint`
+
+`@pre_exercise_code`
+```{python}
+
+```
+
+`@sample_code`
+```{python}
+
+```
+
+`@solution`
+```{python}
+
+```
+
+`@sct`
+```{python}
+
+```
+
+---
+## Loop Control Statements
+
+```yaml
+type: NormalExercise
+key: 28fb295e0c
+lang: python
+xp: 100
+skills: 2
+```
+Another usage for loops is loop control statements.
+
+It is similar to a normal loop, but the uniqueness is that it checks for specific requirements through every iteration of a et of data.
+
+For example:
+
+    for x in range(25):
+        if x % 2 == 0:
+            print (x)
+
+A loop control statement is basically a loop that contains a 
+`@instructions`
+
+`@hint`
+
+`@pre_exercise_code`
+```{python}
+
+```
+
+`@sample_code`
+```{python}
+
+```
+
+`@solution`
+```{python}
+
+```
+
+`@sct`
+```{python}
+
+```
