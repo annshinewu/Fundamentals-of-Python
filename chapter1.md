@@ -257,6 +257,29 @@ print ("5.", ___)
 
 `@solution`
 ```{python}
+# Declares and initalizes a list
+list1 = [0,1,2,3,4,5,6,"Seven", "Eight", "Nine", "Ten"]
+# In order to access an element within the list, you will call list_name[index_of_element]
+firstElement = list1[0]
+print ("1.", firstElement) # It will print "0"
+# Accesses the 4th element to the 5th element
+subsetElement = list1[3:5]
+print ("2.", subsetElement) # It will print "[3, 4]"
+print ("Original value at index 7: ")
+print ("3.", list1[7]) # It will print 
+# Updates list1[7] which originally was "Seven" to 7
+list1[7] = 7
+print ("Updated value at index 7: ")
+print ("4.", list1[7]) # It will print 
+print ("5.", list1) # Prints the entire list
+# Deletes the first element (with index 0)
+del list1[0]
+# Notice, that 0 has been deleted so all elements after it has been shifted forward one index
+print ("6.", list1)
+# Slicing also works for lists! This will print all the elements starting from index 3 (aka the 4th element) to index 7 (aka 8th element)
+print ("7.", list1[3:8])
+
+# Now it is your turn to practice list operations
 list2 = ["Physics", "Python", "Writing", "Calculus"]
 print ("1.", list2)
 print ("2.",list2[2])
@@ -330,6 +353,16 @@ print ("3.", ___ in ___)
 
 `@solution`
 ```{python}
+practice1 = [1,2,3,4,5]
+practice2 = [6,7,8,9,10]
+# This concatentates practice1 and practice2 to practice3; practice3 will become [1,2,3,4,5,6,7,8,9,10]
+practice3 = practice1 + practice2
+print ("1.", practice3)
+# This checks whether 3 is in practice2
+print ("2.", 3 in practice2)
+# This checks whether 3 is in practice3
+print ("3.", 3 in practice3)
+
 list1 =["I ", "am ", "a ", "list ", "of ", "strings."]
 list2 = ["a", "b", "c", "d"]
 list3 = list1 + list2
@@ -407,7 +440,6 @@ print ("5.", practice1)
 practice1.sort()
 print ("6.", practice1)
 
-
 list1 = [___,___,___,___,___];
 print ("1.", ___(___))
 del list1[___]
@@ -424,6 +456,24 @@ print ("7.", ___)
 
 `@solution`
 ```{python}
+practice1 = [12,400,723,4100,-100];
+# Prints the length of `practice1`
+print ("1.", len(practice1))
+# Prints the maximum of `practice1`
+print ("2.", max(practice1))
+# Prints the minimum of `practice1`
+print ("3.", min(practice1))
+# Appends [51,51,51,51,-10,203,-10] to practice1
+practice1.extend([12,401,12,723,-10,203,-10])
+# Count the number of 723s in practice1
+print ("4.", practice1.count(723))
+# Inserts 100 at the 2nd index
+practice1.insert(2,100)
+print ("5.", practice1)
+# Sorts list1
+practice1.sort()
+print ("6.", practice1)
+
 list1 = [51,203,73,4000,-10];
 print ("1.", len(list1))
 del list1[2]
@@ -510,6 +560,21 @@ del dict1['___'];
 
 `@solution`
 ```{python}
+# Declares and initializes a dictionry with the values {'iPhone5': 7000, 'iPhone4': 5000,'iPhone6':100000,'iPhone7': 200000, 'iPhone8': 400000, 'iPhoneX': 1050000}
+# The keys are the various iPhones, while the value represents their individual price. 
+practice1 = {'iPhone5': 7000, 'iPhone4': 5000,'iPhone6':100000,'iPhone7': 200000, 'iPhone8': 400000}
+# str(dict_name) converts a dictionary to a string representation, then the print function will print the string representation
+print ("1.", str(practice1))
+# Access and print the value with the key 'iPhone7'
+print("2.", practice1['iPhone7'])
+# Updates the price of an iPhone4 to 0
+practice1['iPhone4'] = 0
+# Adds a new entry within the dictionary
+practice1['iPhoneX'] = 1050000
+# Deletes the entry with the key of 'iPhone5'
+del practice1['iPhone5']
+print ("3.", str(practice1))
+
 dict1 = {'Physics': 'A+', 'Biology': 'B+', 'Chemistry': 'A-', 'Python': 'A'};
 print (dict1['Biology'])
 dict1['Chemistry'] = 'B-'
@@ -581,7 +646,19 @@ print ("4.", ___.___())
 ```
 
 `@solution`
-```{python}
+```{python}practice1 = {'iPhone5': 7000, 'iPhone4': 5000,'iPhone6':100000,'iPhone7': 200000, 'iPhone8': 400000}
+# Prints the length of practice1
+print (len(practice1))
+# Prints all the keys of practice1
+print ("Keys:")
+print (practice1.keys())
+# Prints all the values of practice1
+print ("Values:")
+print (practice1.values())
+# Prints all the elements of practice1 in a tuple
+print ("Elements:")
+print (practice1.items())
+
 dict1 = {'Physics': 'A+', 'Biology': 'B+', 'Chemistry': 'A-', 'Python': 'A'};
 print ("1.", len(dict1))
 print ("2.", dict1.keys())
