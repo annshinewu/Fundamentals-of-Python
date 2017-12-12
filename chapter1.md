@@ -33,7 +33,6 @@ Which does not represent or store a specific value or variable?
 # The pre exercise code runs code to initialize the user's workspace.
 # You can use it to load packages, initialize datasets and draw a plot in the viewer
 
-
 ```
 
 `@sct`
