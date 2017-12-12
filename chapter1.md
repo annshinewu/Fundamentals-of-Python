@@ -598,7 +598,7 @@ for x in a:
 
 `@sct`
 ```{python}
-test_output_contains('51\n31\n34\n52\n52\n73\n34\n34', pattern = False, no_output_msg = 'Is the output correct?')
+test_output_contains('51\n31\n34\n52\n52\n73\n34\n34', pattern = False, no_output_msg = 'Check the parameter of for loops and conditions in if statement')
 
 ```
 
@@ -612,28 +612,68 @@ lang: python
 xp: 100
 skills: 2
 ```
-In this chapter, you've learned about comparators, 
+In this chapter, you've learned about comparators, if-elif-else statements, for/while loops, loop control statements, and nested loops.
+
+Now it's time to combine them altogether!
 
 `@instructions`
+array a, b, and c has already been declared for you and array b and c have same sizes of 7 elements.
+
+Create a code that compares a element in array a to every element in arrays b and c.
+
+The requirements are:
+
+1. the element must be greater than all elements in array b
+
+2. the element must be smaller than all the elements in array c
+
+Once that element of array a meets both of the requirements, it is then printed out.
+
+Fill in the blanks of the code to have the correct output.
+
 
 `@hint`
+Make sure to include two requirements in the if statement that alters check (using keyword 'and')
 
+Check to see if the arrays that are iterating are correct.
 `@pre_exercise_code`
 ```{python}
-
+a = [3, 623, 45, 63, 110, 130, 411, 149, 91]
+b = [31, 41, 5, 3, 42, 62, 34]
+c = [31231, 4123, 412, 634, 423, 986, 150]
 ```
 
 `@sample_code`
 ```{python}
-
+check = True
+for ___ in ____:
+    for index in range(___):
+        if(_______):
+            check = ___
+        else:
+            check = ___
+            break
+    if(___):
+        print(___)
 ```
 
 `@solution`
 ```{python}
+check = True
+for x in a:
+    for index in range(7):
+        if(x > b[index] and x < c[index]):
+            check = True
+        else:
+          check = False
+          break
+    if (check):
+      print (x)
 
 ```
 
 `@sct`
 ```{python}
+test_output_contains('63\n110\n130\n\n149\n91', pattern = False, no_output_msg = 'The output is wrong, check the code again')
 
 ```
