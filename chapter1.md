@@ -260,7 +260,10 @@ x = 'apples'
 
 `@sample_code`
 ```{python}
-
+if ( ___ == ___):
+    print (___)
+else:
+    print (___)
 ```
 
 `@solution`
