@@ -483,44 +483,6 @@ test_object('x', eq_condition = "equal", do_eval=True, incorrect_msg = "Check yo
 
 ```
 
----
-## Nested Loops
-
-```yaml
-type: NormalExercise
-key: 2260e70a56
-lang: python
-xp: 100
-skills: 2
-```
-In this exercise, you will be learning how loops can be within loops, and its usage.
-
-
-
-`@instructions`
-
-
-`@hint`
-
-`@pre_exercise_code`
-```{python}
-
-```
-
-`@sample_code`
-```{python}
-
-```
-
-`@solution`
-```{python}
-
-```
-
-`@sct`
-```{python}
-
-```
 
 ---
 ## Loop Control Statements
@@ -542,7 +504,116 @@ For example:
         if x % 2 == 0:
             print (x)
 
-A loop control statement is basically a loop that contains a 
+A loop control statement is basically a loop that contains a conditional statement, controlling each executive statement inside the loop for each iterations.
+
+In the example above, it prints all even numbers (with the expression of x%2==0, finding all numbers divisible by 2) wihtin the range of 0 to 25(using the for loop)
+
+Loop Control Statements are especially useful when processing arrays or a set of data.
+`@instructions`
+An array named array has already been declared for you.
+
+Create a loop control statement that iterates every element in array, and prints out the value if the element in the array is greater than or equal to the first element.
+
+**first element is already named 'first'
+`@hint`
+
+`@pre_exercise_code`
+```{python}
+array = [5, 3, 7, 8, 2, 7, 9, 2, 7, 5, 6, 10, 12, 3, 2, 14, 6]
+```
+
+`@sample_code`
+```{python}
+first = array[0]
+
+```
+
+`@solution`
+```{python}
+first = array[0]
+for x in array:
+    if(x >= first):
+        print (x)
+```
+
+`@sct`
+```{python}
+test_output_contains('5\n7\n8\n7\n9\n7\n5\n6\n10\n12\n14\n6', pattern = False, no_output_msg = 'Is the output correct?')
+
+```
+
+---
+## Nested Loops
+
+```yaml
+type: NormalExercise
+key: 2260e70a56
+lang: python
+xp: 100
+skills: 2
+```
+In this exercise, you will be learning how loops can be within loops, and its usage.
+
+The basic structure of a nested loop codew segment is:
+
+    while(condition):
+        while(condition):
+            statements
+        statements
+
+
+`@instructions`
+array a and b have already been declared for you
+
+Create a nested loop that checks if each of the element in array a is in either one of the elements in array b, checking separately.
+
+If it is true, then it will print out the element; it prints nothing if it is false.
+
+`@hint`
+Use for loops to check every element in the arrays
+`@pre_exercise_code`
+```{python}
+a = [312, 51312, 51, 31, 34, 52, 52, 43, 73, 34, 72, 34]
+b = [51, 73, 31, 452, 5622, 3123, 52, 34, 513, 623, 6]
+
+```
+
+`@sample_code`
+```{python}
+for ____ in ____:
+    for ____ in ____:
+        if (________):
+            ________
+            break
+```
+
+`@solution`
+```{python}
+for x in a:
+    for y in b:
+        if (x == y):
+            print (x)
+            break
+```
+
+`@sct`
+```{python}
+test_output_contains('51\n31\n34\n52\n52\n73\n34\n34', pattern = False, no_output_msg = 'Is the output correct?')
+
+```
+
+---
+## Practice Decision Making & Loops
+
+```yaml
+type: NormalExercise
+key: 79b97721b4
+lang: python
+xp: 100
+skills: 2
+```
+In this chapter, you've learned about comparators, 
+
 `@instructions`
 
 `@hint`
