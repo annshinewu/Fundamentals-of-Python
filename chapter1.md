@@ -802,5 +802,4 @@ test_object("string2")
 test_object("string3")
 test_student_typed("str(dict1)", pattern = False)
 success_msg("Great work!")
-
 ```
