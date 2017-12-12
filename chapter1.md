@@ -646,18 +646,8 @@ print ("4.", ___.___())
 ```
 
 `@solution`
-```{python}practice1 = {'iPhone5': 7000, 'iPhone4': 5000,'iPhone6':100000,'iPhone7': 200000, 'iPhone8': 400000}
-# Prints the length of practice1
-print (len(practice1))
-# Prints all the keys of practice1
-print ("Keys:")
-print (practice1.keys())
-# Prints all the values of practice1
-print ("Values:")
-print (practice1.values())
-# Prints all the elements of practice1 in a tuple
-print ("Elements:")
-print (practice1.items())
+```{python}
+
 
 dict1 = {'Physics': 'A+', 'Biology': 'B+', 'Chemistry': 'A-', 'Python': 'A'};
 print ("1.", len(dict1))
