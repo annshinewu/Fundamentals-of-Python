@@ -558,7 +558,7 @@ skills: 2
 ```
 In this exercise, you will be learning how loops can be within loops, and its usage.
 
-The basic structure of a nested loop codew segment is:
+The basic structure of a nested loop code segment is:
 
     while(condition):
         while(condition):
@@ -623,7 +623,7 @@ Now it's time to combine them altogether!
 `@instructions`
 array a, b, and c has already been declared for you and array b and c have same sizes of 7 elements.
 
-Create a code that compares a element in array a to every element in arrays b and c.
+Create a code that compares an element in array a to every element in arrays b and c.
 
 The requirements are:
 
