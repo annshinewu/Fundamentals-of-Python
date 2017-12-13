@@ -399,9 +399,9 @@ It continues on for another iteration before the expression becomes 4 < 4, which
 `@instructions`
 Variable x has already been declared for you.
 
-Create a while loop that has a condtion of x being greater than or equal to 2
+Create a while loop that has a condition of x being greater than or equal to 2
 
-And inside the while loop, it prints the string "x" and decreases varaible x by 1.
+And inside the while loop, it prints the string "x" and decreases variable x by 1.
 
 Run the program and see how many times is "x" printed.
 `@hint`
@@ -445,7 +445,7 @@ lang: python
 xp: 100
 skills: 2
 ```
-An alternatwive for using a while loop would be a For Loop.
+An alternative for using a while loop would be a For Loop.
 
 The syntax of a for loop is:
 
