@@ -500,7 +500,7 @@ skills: 2
 ```
 Another usage for loops is loop control statements.
 
-It is similar to a normal loop, but the uniqueness is that it checks for specific requirements through every iteration of a et of data.
+It is similar to a normal loop, but the uniqueness is that it checks for specific requirements through every iteration of a set of data.
 
 For example:
 
@@ -510,7 +510,7 @@ For example:
 
 A loop control statement is basically a loop that contains a conditional statement, controlling each executive statement inside the loop for each iterations.
 
-In the example above, it prints all even numbers (with the expression of x%2==0, finding all numbers divisible by 2) wihtin the range of 0 to 25(using the for loop)
+In the example above, it prints all even numbers (with the expression of x%2==0, finding all numbers divisible by 2) within the range of 0 to 25(using the for loop)
 
 Loop Control Statements are especially useful when processing arrays or a set of data.
 `@instructions`
