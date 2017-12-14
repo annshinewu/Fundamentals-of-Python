@@ -637,7 +637,7 @@ print (practice1.values())
 print ("Elements:")
 print (practice1.items())
 
-dict1 = {'___': '___', '___': '___', '___': '___', '___': '___'};
+dict1 = {'___': '___', '___': '___', '___': '___', '___': '___'}
 print ("1.", ___(___))
 print ("2.", ___.___())
 print ("3.", ___.___())
@@ -659,12 +659,6 @@ print (practice1.values())
 print ("Elements:")
 print (practice1.items())
 
-dict1 = {'___': '___', '___': '___', '___': '___', '___': '___'};
-print ("1.", ___(___))
-print ("2.", ___.___())
-print ("3.", ___.___())
-print ("4.", ___.___())
-
 dict1 = {'Physics': 'A+', 'Biology': 'B+', 'Chemistry': 'A-', 'Python': 'A'};
 print ("1.", len(dict1))
 print ("2.", dict1.keys())
@@ -678,9 +672,9 @@ test_output_contains("1. 4", pattern=False, no_output_msg= "You have not printed
 test_output_contains("2. dict_keys([", pattern=False, no_output_msg= "You have not printed the keys for dict1 correctly")
 test_output_contains("3. dict_values([", pattern=False, no_output_msg= "You have not printed the values for dict1 correctly")
 test_output_contains("4. dict_items([", pattern=False, no_output_msg= "You have not printed the items for dict1 correctly")
-test_student_typed("dict1.keys", pattern = False)
-test_student_typed("dict1.values", pattern = False)
-test_student_typed("dict1.items", pattern = False)
+test_function("keys")
+test_function("values")
+test_function("items")
 
 test_object("dict1")
 success_msg("Great work!")
