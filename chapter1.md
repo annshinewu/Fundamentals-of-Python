@@ -584,8 +584,7 @@ del dict1['Python']
 `@sct`
 ```{python}
 test_output_contains("B+", pattern=False, no_output_msg= "You have not printed the value for the key 'Biology' correctly")
-test_object("dict1")
-
+test_dictionary('dict1')
 success_msg("Great work!")
 
 ```
@@ -675,7 +674,7 @@ test_output_contains("4. dict_items([", pattern=False, no_output_msg= "You have 
 
 
 
-test_object("dict1")
+test_dictionary('dict1')
 success_msg("Great work!")
 
 ```
@@ -787,7 +786,7 @@ test_output_contains("7. ['Python', 'Ethics', 'Economics', 'PE', 'Robotics', 88,
 test_output_contains("8. [70, 93, 93, 100]", pattern=False, no_output_msg= "You have not printed list2 correctly")
 test_output_contains("9. 5", pattern=False, no_output_msg= "You have not printed the length of dict1 correctly")
 test_output_contains("10. 6", pattern=False, no_output_msg= "You have not printed the updated length of dict1 correctly")
-test_object("dict1")
+test_dictionary('dict1')
 test_object("list1")
 test_object("list2")
 test_object("string1")
