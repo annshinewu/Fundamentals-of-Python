@@ -421,7 +421,7 @@ Lists have some built-in functions that can be used. These are a few commonly us
 
 `@sample_code`
 ```{python}
-practice1 = [12,400,723,4100,-100];
+practice1 = [12,400,723,4100,-100]
 # Prints the length of `practice1`
 print ("1.", len(practice1))
 # Prints the maximum of `practice1`
@@ -439,7 +439,7 @@ print ("5.", practice1)
 practice1.sort()
 print ("6.", practice1)
 
-list1 = [___,___,___,___,___];
+list1 = [___,___,___,___,___]
 print ("1.", ___(___))
 del list1[___]
 print ("2.", ___(___))
@@ -455,7 +455,7 @@ print ("7.", ___)
 
 `@solution`
 ```{python}
-practice1 = [12,400,723,4100,-100];
+practice1 = [12,400,723,4100,-100]
 # Prints the length of `practice1`
 print ("1.", len(practice1))
 # Prints the maximum of `practice1`
@@ -473,7 +473,7 @@ print ("5.", practice1)
 practice1.sort()
 print ("6.", practice1)
 
-list1 = [51,203,73,4000,-10];
+list1 = [51,203,73,4000,-10]
 print ("1.", len(list1))
 del list1[2]
 print ("2.", len(list1))
@@ -554,7 +554,7 @@ dict1 = {'___': '___', '___': '___', '___': '___', '___': '___'}
 print (dict1['___'])
 dict1['___'] = '___'
 dict1['___'] = '___'
-del dict1['___'];
+del dict1['___']
 ```
 
 `@solution`
@@ -578,7 +578,7 @@ dict1 = {'Physics': 'A+', 'Biology': 'B+', 'Chemistry': 'A-', 'Python': 'A'}
 print (dict1['Biology'])
 dict1['Chemistry'] = 'B-'
 dict1['Calculus'] = 'D+'
-del dict1['Python'];
+del dict1['Python']
 ```
 
 `@sct`
@@ -672,9 +672,10 @@ test_output_contains("1. 4", pattern=False, no_output_msg= "You have not printed
 test_output_contains("2. dict_keys([", pattern=False, no_output_msg= "You have not printed the keys for dict1 correctly")
 test_output_contains("3. dict_values([", pattern=False, no_output_msg= "You have not printed the values for dict1 correctly")
 test_output_contains("4. dict_items([", pattern=False, no_output_msg= "You have not printed the items for dict1 correctly")
-test_function("keys")
-test_function("values")
-test_function("items")
+test_function(".keys()")
+test_function(".values()")
+test_function(".items()")
+
 
 test_object("dict1")
 success_msg("Great work!")
