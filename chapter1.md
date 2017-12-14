@@ -672,7 +672,7 @@ test_output_contains("2. dict_keys([", pattern=False, no_output_msg= "You have n
 test_output_contains("3. dict_values([", pattern=False, no_output_msg= "You have not printed the values for dict1 correctly")
 test_output_contains("4. dict_items([", pattern=False, no_output_msg= "You have not printed the items for dict1 correctly")
 
-test_function(".keys")
+test_function("keys")
 
 test_dictionary('dict1')
 success_msg("Great work!")
