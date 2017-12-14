@@ -550,7 +550,7 @@ practice1['iPhoneX'] = 1050000
 del practice1['iPhone5']
 print ("3.", str(practice1))
 
-dict1 = {'___': '___', '___': '___', '___': '___', '___': '___'};
+dict1 = {'___': '___', '___': '___', '___': '___', '___': '___'}
 print (dict1['___'])
 dict1['___'] = '___'
 dict1['___'] = '___'
@@ -574,7 +574,7 @@ practice1['iPhoneX'] = 1050000
 del practice1['iPhone5']
 print ("3.", str(practice1))
 
-dict1 = {'Physics': 'A+', 'Biology': 'B+', 'Chemistry': 'A-', 'Python': 'A'};
+dict1 = {'Physics': 'A+', 'Biology': 'B+', 'Chemistry': 'A-', 'Python': 'A'}
 print (dict1['Biology'])
 dict1['Chemistry'] = 'B-'
 dict1['Calculus'] = 'D+'
@@ -659,7 +659,7 @@ print (practice1.values())
 print ("Elements:")
 print (practice1.items())
 
-dict1 = {'Physics': 'A+', 'Biology': 'B+', 'Chemistry': 'A-', 'Python': 'A'};
+dict1 = {'Physics': 'A+', 'Biology': 'B+', 'Chemistry': 'A-', 'Python': 'A'}
 print ("1.", len(dict1))
 print ("2.", dict1.keys())
 print ("3.", dict1.values())
