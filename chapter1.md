@@ -214,6 +214,8 @@ What is a list?
     - Print out the entire list again
     - Print out the 2nd to 3rd elements
 `@hint`
+- Look at the sample code that performs the same operations for list1
+- Don't forget, the index of the first object is ZERO!
 
 `@pre_exercise_code`
 ```{python}
@@ -310,10 +312,7 @@ lang: python
 xp: 100
 skills: 2
 ```
-Other than simply deleting or updating elements in a list, there are also other list operations.
-1. Concatenation
-2. Repetition
-3. Membership
+Other than simply deleting or updating elements in a list, there are also other list operations: Concatenation and Membership.
 
 `@instructions`
 Following the sample code provided, work on the exercise below:
@@ -324,6 +323,9 @@ Following the sample code provided, work on the exercise below:
 - Check if "b" is inside of list1
 - Check if "b" is inside of list3
 `@hint`
+- Study the practice lists that perform the same operations
+- For concatentation, use the '+' operator
+- For membership, remember to use the key word 'in'
 
 `@pre_exercise_code`
 ```{python}
@@ -413,6 +415,12 @@ Lists have some built-in functions that can be used. These are a few commonly us
 - Print `list1`
 
 `@hint`
+- the len function fints the length of the a list
+- the max and min function finds the maximum and minimum of a list 
+- the extend function appends one list to the back of another list
+- the count function counts the occurence of a specific object within a list
+- the insert function inserts an object at a specific index within a list
+- the sort function sorts the list in order
 
 `@pre_exercise_code`
 ```{python}
@@ -527,6 +535,8 @@ Following the sample code provided, work on the exercise below:
 - Delete the entry with a key of "Python"
 
 `@hint`
+- a dictionary has no set order, so instead of numerical indexes, it has keys
+- utilize these set keys to access the values
 
 `@pre_exercise_code`
 ```{python}
@@ -615,6 +625,11 @@ Utilize the introduced built-in functions for the following exercise
 - Print a list of tuples for all the elements in `dict1`
 
 `@hint`
+- the len function finds the length of a dictionary
+- the str function converts the dictionary to a string form, which then can be printed
+- the keys function lists out all the keys of the dictionary
+- the values function lists out all the values of the dictionary
+- the items function lists out all the items, each consisting of a key and a value, of the dictionary
 
 `@pre_exercise_code`
 ```{python}
@@ -714,6 +729,8 @@ After learning how to use strings, lists, and dictionaries in this chapter, lets
 - Delete the entry with the key 'Assignment3'
 - Print out a string form of `dict1`
 `@hint`
+- Use all the information we have learned before and complete this exercise
+- If there are anything you do not remember, go back to the lesson and review it before coming back to this one!
 
 `@pre_exercise_code`
 ```{python}
